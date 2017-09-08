@@ -13,8 +13,3 @@ This will be my main repository for uploading all files relating to the Simc thr
 
 - [x] 7.2.5
 - [ ] 7.3.5 - Todo when patch notes are released. 
-
-
-- [x] Finish my changes
-- [ ] Push my commits to GitHub
-- [ ] Open a pull request
