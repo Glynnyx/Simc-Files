@@ -1,11 +1,15 @@
-#**Simulation Craft Files**
+# **Simulation Craft Files**
 
 This will be my main repository for uploading all files relating to the Simc threads I create for the Altered-Time website. 
 
-require Contents!
+## **Contents**
 
 - Folders will be and will contain the following:
     * Specs
     * Type of sim (e.g. Legendary Combos Single Target, Talent Combos Multi Target etc.)
     * This will also include any .bat files I use to automate the process.
 
+## **Projects Progress:**
+
+- [x] 7.2.5
+- [ ] 7.3.5 - Todo when patch notes are released. 
