@@ -11,5 +11,4 @@ This will be my main repository for uploading all files relating to the Simc thr
 
 ## **Projects Progress:**
 
-- [x] 7.2.5
-- [ ] 7.3.5 - Todo when patch notes are released. 
+- 7.3.5: As soon as 7.3.5 is released, sims will start to generate. 
