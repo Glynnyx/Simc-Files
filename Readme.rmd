@@ -11,4 +11,4 @@ This will be my main repository for uploading all files relating to the Simc thr
 
 ## **Projects Progress:**
 
-- 7.3.5: As soon as 7.3.5 is released, sims will start to generate. 
+- 7.3.2: Will be released on Antorus release date.
