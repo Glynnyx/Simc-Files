@@ -7,13 +7,13 @@ process_priority=low
 html=Arcane_Talents_4_Target
 desired_targets=4
 
-mage="T21_Mage_Arcane"
+Mage="Amp_ROP_CU_Ersn_OP"
 spec=arcane
 level=110
 race=troll
 role=spell
 position=back
-talents=2022031
+talents=2122131
 artifact=4:0:0:0:0:72:4:73:1:74:4:75:4:77:4:78:1:79:4:80:1:81:4:82:4:83:4:84:4:86:1:87:1:290:1:1169:1:1339:1:1371:1:1529:4:1530:1:1531:1:1532:24:1639:1
 crucible=1739:1780:1529/1739:1780:82/1739:1780:1529
 
@@ -46,732 +46,728 @@ main_hand=aluneth,id=127857,gem_id=155846/155850/155846,relic_id=3612:1512/3612:
 # set_bonus=tier21_2pc=1
 # set_bonus=tier21_4pc=1
 
-
-copy=Pyro_MI_AF_LB_Kind
+copy=AFm_MI_SN_NT_OP
 talents=1111111
 
-copy=Pyro_MI_AF_LB_CiS
+copy=AFm_MI_SN_NT_TF
 talents=1111112
 
-copy=Pyro_MI_AF_LB_Met
+copy=AFm_MI_SN_NT_AO
 talents=1111113
 
-copy=Pyro_MI_AF_UM_Kind
+copy=AFm_MI_SN_UM_OP
 talents=1111121
 
-copy=Pyro_MI_AF_UM_CiS
+copy=AFm_MI_SN_UM_TF
 talents=1111122
 
-copy=Pyro_MI_AF_UM_Met
+copy=AFm_MI_SN_UM_AO
 talents=1111123
 
-copy=Pyro_MI_AF_FP_Kind
+copy=AFm_MI_SN_Ersn_OP
 talents=1111131
 
-copy=Pyro_MI_AF_FP_CiS
+copy=AFm_MI_SN_Ersn_TF
 talents=1111132
 
-copy=Pyro_MI_AF_FP_Met
+copy=AFm_MI_SN_Ersn_AO
 talents=1111133
 
-copy=Pyro_MI_FO_LB_Kind
+copy=AFm_MI_CU_NT_OP
 talents=1112111
 
-copy=Pyro_MI_FO_LB_CiS
+copy=AFm_MI_CU_NT_TF
 talents=1112112
 
-copy=Pyro_MI_FO_LB_Met
+copy=AFm_MI_CU_NT_AO
 talents=1112113
 
-copy=Pyro_MI_FO_UM_Kind
+copy=AFm_MI_CU_UM_OP
 talents=1112121
 
-copy=Pyro_MI_FO_UM_CiS
+copy=AFm_MI_CU_UM_TF
 talents=1112122
 
-copy=Pyro_MI_FO_UM_Met
+copy=AFm_MI_CU_UM_AO
 talents=1112123
 
-copy=Pyro_MI_FO_FP_Kind
+copy=AFm_MI_CU_Ersn_OP
 talents=1112131
 
-copy=Pyro_MI_FO_FP_CiS
+copy=AFm_MI_CU_Ersn_TF
 talents=1112132
 
-copy=Pyro_MI_FO_FP_Met
+copy=AFm_MI_CU_Ersn_AO
 talents=1112133
 
-copy=Pyro_MI_CB_LB_Kind
+copy=AFm_MI_Res_NT_OP
 talents=1113111
 
-copy=Pyro_MI_CB_LB_CiS
+copy=AFm_MI_Res_NT_TF
 talents=1113112
 
-copy=Pyro_MI_CB_LB_Met
+copy=AFm_MI_Res_NT_AO
 talents=1113113
 
-copy=Pyro_MI_CB_UM_Kind
+copy=AFm_MI_Res_UM_OP
 talents=1113121
 
-copy=Pyro_MI_CB_UM_CiS
+copy=AFm_MI_Res_UM_TF
 talents=1113122
 
-copy=Pyro_MI_CB_UM_Met
+copy=AFm_MI_Res_UM_AO
 talents=1113123
 
-copy=Pyro_MI_CB_FP_Kind
+copy=AFm_MI_Res_Ersn_OP
 talents=1113131
 
-copy=Pyro_MI_CB_FP_CiS
+copy=AFm_MI_Res_Ersn_TF
 talents=1113132
 
-copy=Pyro_MI_CB_FP_Met
+copy=AFm_MI_Res_Ersn_AO
 talents=1113133
 
-copy=Pyro_ROP_AF_LB_Kind
+copy=AFm_ROP_SN_NT_OP
 talents=1121111
 
-copy=Pyro_ROP_AF_LB_CiS
+copy=AFm_ROP_SN_NT_TF
 talents=1121112
 
-copy=Pyro_ROP_AF_LB_Met
+copy=AFm_ROP_SN_NT_AO
 talents=1121113
 
-copy=Pyro_ROP_AF_UM_Kind
+copy=AFm_ROP_SN_UM_OP
 talents=1121121
 
-copy=Pyro_ROP_AF_UM_CiS
+copy=AFm_ROP_SN_UM_TF
 talents=1121122
 
-copy=Pyro_ROP_AF_UM_Met
+copy=AFm_ROP_SN_UM_AO
 talents=1121123
 
-copy=Pyro_ROP_AF_FP_Kind
+copy=AFm_ROP_SN_Ersn_OP
 talents=1121131
 
-copy=Pyro_ROP_AF_FP_CiS
+copy=AFm_ROP_SN_Ersn_TF
 talents=1121132
 
-copy=Pyro_ROP_AF_FP_Met
+copy=AFm_ROP_SN_Ersn_AO
 talents=1121133
 
-copy=Pyro_ROP_FO_LB_Kind
+copy=AFm_ROP_CU_NT_OP
 talents=1122111
 
-copy=Pyro_ROP_FO_LB_CiS
+copy=AFm_ROP_CU_NT_TF
 talents=1122112
 
-copy=Pyro_ROP_FO_LB_Met
+copy=AFm_ROP_CU_NT_AO
 talents=1122113
 
-copy=Pyro_ROP_FO_UM_Kind
+copy=AFm_ROP_CU_UM_OP
 talents=1122121
 
-copy=Pyro_ROP_FO_UM_CiS
+copy=AFm_ROP_CU_UM_TF
 talents=1122122
 
-copy=Pyro_ROP_FO_UM_Met
+copy=AFm_ROP_CU_UM_AO
 talents=1122123
 
-copy=Pyro_ROP_FO_FP_Kind
+copy=AFm_ROP_CU_Ersn_OP
 talents=1122131
 
-copy=Pyro_ROP_FO_FP_CiS
+copy=AFm_ROP_CU_Ersn_TF
 talents=1122132
 
-copy=Pyro_ROP_FO_FP_Met
+copy=AFm_ROP_CU_Ersn_AO
 talents=1122133
 
-copy=Pyro_ROP_CB_LB_Kind
+copy=AFm_ROP_Res_NT_OP
 talents=1123111
 
-copy=Pyro_ROP_CB_LB_CiS
+copy=AFm_ROP_Res_NT_TF
 talents=1123112
 
-copy=Pyro_ROP_CB_LB_Met
+copy=AFm_ROP_Res_NT_AO
 talents=1123113
 
-copy=Pyro_ROP_CB_UM_Kind
+copy=AFm_ROP_Res_UM_OP
 talents=1123121
 
-copy=Pyro_ROP_CB_UM_CiS
+copy=AFm_ROP_Res_UM_TF
 talents=1123122
 
-copy=Pyro_ROP_CB_UM_Met
+copy=AFm_ROP_Res_UM_AO
 talents=1123123
 
-copy=Pyro_ROP_CB_FP_Kind
+copy=AFm_ROP_Res_Ersn_OP
 talents=1123131
 
-copy=Pyro_ROP_CB_FP_CiS
+copy=AFm_ROP_Res_Ersn_TF
 talents=1123132
 
-copy=Pyro_ROP_CB_FP_Met
+copy=AFm_ROP_Res_Ersn_AO
 talents=1123133
 
-copy=Pyro_IF_AF_LB_Kind
+copy=AFm_IF_SN_NT_OP
 talents=1131111
 
-copy=Pyro_IF_AF_LB_CiS
+copy=AFm_IF_SN_NT_TF
 talents=1131112
 
-copy=Pyro_IF_AF_LB_Met
+copy=AFm_IF_SN_NT_AO
 talents=1131113
 
-copy=Pyro_IF_AF_UM_Kind
+copy=AFm_IF_SN_UM_OP
 talents=1131121
 
-copy=Pyro_IF_AF_UM_CiS
+copy=AFm_IF_SN_UM_TF
 talents=1131122
 
-copy=Pyro_IF_AF_UM_Met
+copy=AFm_IF_SN_UM_AO
 talents=1131123
 
-copy=Pyro_IF_AF_FP_Kind
+copy=AFm_IF_SN_Ersn_OP
 talents=1131131
 
-copy=Pyro_IF_AF_FP_CiS
+copy=AFm_IF_SN_Ersn_TF
 talents=1131132
 
-copy=Pyro_IF_AF_FP_Met
+copy=AFm_IF_SN_Ersn_AO
 talents=1131133
 
-copy=Pyro_IF_FO_LB_Kind
+copy=AFm_IF_CU_NT_OP
 talents=1132111
 
-copy=Pyro_IF_FO_LB_CiS
+copy=AFm_IF_CU_NT_TF
 talents=1132112
 
-copy=Pyro_IF_FO_LB_Met
+copy=AFm_IF_CU_NT_AO
 talents=1132113
 
-copy=Pyro_IF_FO_UM_Kind
+copy=AFm_IF_CU_UM_OP
 talents=1132121
 
-copy=Pyro_IF_FO_UM_CiS
+copy=AFm_IF_CU_UM_TF
 talents=1132122
 
-copy=Pyro_IF_FO_UM_Met
+copy=AFm_IF_CU_UM_AO
 talents=1132123
 
-copy=Pyro_IF_FO_FP_Kind
+copy=AFm_IF_CU_Ersn_OP
 talents=1132131
 
-copy=Pyro_IF_FO_FP_CiS
+copy=AFm_IF_CU_Ersn_TF
 talents=1132132
 
-copy=Pyro_IF_FO_FP_Met
+copy=AFm_IF_CU_Ersn_AO
 talents=1132133
 
-copy=Pyro_IF_CB_LB_Kind
+copy=AFm_IF_Res_NT_OP
 talents=1133111
 
-copy=Pyro_IF_CB_LB_CiS
+copy=AFm_IF_Res_NT_TF
 talents=1133112
 
-copy=Pyro_IF_CB_LB_Met
+copy=AFm_IF_Res_NT_AO
 talents=1133113
 
-copy=Pyro_IF_CB_UM_Kind
+copy=AFm_IF_Res_UM_OP
 talents=1133121
 
-copy=Pyro_IF_CB_UM_CiS
+copy=AFm_IF_Res_UM_TF
 talents=1133122
 
-copy=Pyro_IF_CB_UM_Met
+copy=AFm_IF_Res_UM_AO
 talents=1133123
 
-copy=Pyro_IF_CB_FP_Kind
+copy=AFm_IF_Res_Ersn_OP
 talents=1133131
 
-copy=Pyro_IF_CB_FP_CiS
+copy=AFm_IF_Res_Ersn_TF
 talents=1133132
 
-copy=Pyro_IF_CB_FP_Met
+copy=AFm_IF_Res_Ersn_AO
 talents=1133133
 
-copy=Conf_MI_AF_LB_Kind
+copy=Amp_MI_SN_NT_OP
 talents=2111111
 
-copy=Conf_MI_AF_LB_CiS
+copy=Amp_MI_SN_NT_TF
 talents=2111112
 
-copy=Conf_MI_AF_LB_Met
+copy=Amp_MI_SN_NT_AO
 talents=2111113
 
-copy=Conf_MI_AF_UM_Kind
+copy=Amp_MI_SN_UM_OP
 talents=2111121
 
-copy=Conf_MI_AF_UM_CiS
+copy=Amp_MI_SN_UM_TF
 talents=2111122
 
-copy=Conf_MI_AF_UM_Met
+copy=Amp_MI_SN_UM_AO
 talents=2111123
 
-copy=Conf_MI_AF_FP_Kind
+copy=Amp_MI_SN_Ersn_OP
 talents=2111131
 
-copy=Conf_MI_AF_FP_CiS
+copy=Amp_MI_SN_Ersn_TF
 talents=2111132
 
-copy=Conf_MI_AF_FP_Met
+copy=Amp_MI_SN_Ersn_AO
 talents=2111133
 
-copy=Conf_MI_FO_LB_Kind
+copy=Amp_MI_CU_NT_OP
 talents=2112111
 
-copy=Conf_MI_FO_LB_CiS
+copy=Amp_MI_CU_NT_TF
 talents=2112112
 
-copy=Conf_MI_FO_LB_Met
+copy=Amp_MI_CU_NT_AO
 talents=2112113
 
-copy=Conf_MI_FO_UM_Kind
+copy=Amp_MI_CU_UM_OP
 talents=2112121
 
-copy=Conf_MI_FO_UM_CiS
+copy=Amp_MI_CU_UM_TF
 talents=2112122
 
-copy=Conf_MI_FO_UM_Met
+copy=Amp_MI_CU_UM_AO
 talents=2112123
 
-copy=Conf_MI_FO_FP_Kind
+copy=Amp_MI_CU_Ersn_OP
 talents=2112131
 
-copy=Conf_MI_FO_FP_CiS
+copy=Amp_MI_CU_Ersn_TF
 talents=2112132
 
-copy=Conf_MI_FO_FP_Met
+copy=Amp_MI_CU_Ersn_AO
 talents=2112133
 
-copy=Conf_MI_CB_LB_Kind
+copy=Amp_MI_Res_NT_OP
 talents=2113111
 
-copy=Conf_MI_CB_LB_CiS
+copy=Amp_MI_Res_NT_TF
 talents=2113112
 
-copy=Conf_MI_CB_LB_Met
+copy=Amp_MI_Res_NT_AO
 talents=2113113
 
-copy=Conf_MI_CB_UM_Kind
+copy=Amp_MI_Res_UM_OP
 talents=2113121
 
-copy=Conf_MI_CB_UM_CiS
+copy=Amp_MI_Res_UM_TF
 talents=2113122
 
-copy=Conf_MI_CB_UM_Met
+copy=Amp_MI_Res_UM_AO
 talents=2113123
 
-copy=Conf_MI_CB_FP_Kind
+copy=Amp_MI_Res_Ersn_OP
 talents=2113131
 
-copy=Conf_MI_CB_FP_CiS
+copy=Amp_MI_Res_Ersn_TF
 talents=2113132
 
-copy=Conf_MI_CB_FP_Met
+copy=Amp_MI_Res_Ersn_AO
 talents=2113133
 
-copy=Conf_ROP_AF_LB_Kind
+copy=Amp_ROP_SN_NT_OP
 talents=2121111
 
-copy=Conf_ROP_AF_LB_CiS
+copy=Amp_ROP_SN_NT_TF
 talents=2121112
 
-copy=Conf_ROP_AF_LB_Met
+copy=Amp_ROP_SN_NT_AO
 talents=2121113
 
-copy=Conf_ROP_AF_UM_Kind
+copy=Amp_ROP_SN_UM_OP
 talents=2121121
 
-copy=Conf_ROP_AF_UM_CiS
+copy=Amp_ROP_SN_UM_TF
 talents=2121122
 
-copy=Conf_ROP_AF_UM_Met
+copy=Amp_ROP_SN_UM_AO
 talents=2121123
 
-copy=Conf_ROP_AF_FP_Kind
+copy=Amp_ROP_SN_Ersn_OP
 talents=2121131
 
-copy=Conf_ROP_AF_FP_CiS
+copy=Amp_ROP_SN_Ersn_TF
 talents=2121132
 
-copy=Conf_ROP_AF_FP_Met
+copy=Amp_ROP_SN_Ersn_AO
 talents=2121133
 
-copy=Conf_ROP_FO_LB_Kind
+copy=Amp_ROP_CU_NT_OP
 talents=2122111
 
-copy=Conf_ROP_FO_LB_CiS
+copy=Amp_ROP_CU_NT_TF
 talents=2122112
 
-copy=Conf_ROP_FO_LB_Met
+copy=Amp_ROP_CU_NT_AO
 talents=2122113
 
-copy=Conf_ROP_FO_UM_Kind
+copy=Amp_ROP_CU_UM_OP
 talents=2122121
 
-copy=Conf_ROP_FO_UM_CiS
+copy=Amp_ROP_CU_UM_TF
 talents=2122122
 
-copy=Conf_ROP_FO_UM_Met
+copy=Amp_ROP_CU_UM_AO
 talents=2122123
 
-copy=Conf_ROP_FO_FP_Kind
-talents=2122131
-
-copy=Conf_ROP_FO_FP_CiS
+copy=Amp_ROP_CU_Ersn_TF
 talents=2122132
 
-copy=Conf_ROP_FO_FP_Met
+copy=Amp_ROP_CU_Ersn_AO
 talents=2122133
 
-copy=Conf_ROP_CB_LB_Kind
+copy=Amp_ROP_Res_NT_OP
 talents=2123111
 
-copy=Conf_ROP_CB_LB_CiS
+copy=Amp_ROP_Res_NT_TF
 talents=2123112
 
-copy=Conf_ROP_CB_LB_Met
+copy=Amp_ROP_Res_NT_AO
 talents=2123113
 
-copy=Conf_ROP_CB_UM_Kind
+copy=Amp_ROP_Res_UM_OP
 talents=2123121
 
-copy=Conf_ROP_CB_UM_CiS
+copy=Amp_ROP_Res_UM_TF
 talents=2123122
 
-copy=Conf_ROP_CB_UM_Met
+copy=Amp_ROP_Res_UM_AO
 talents=2123123
 
-copy=Conf_ROP_CB_FP_Kind
+copy=Amp_ROP_Res_Ersn_OP
 talents=2123131
 
-copy=Conf_ROP_CB_FP_CiS
+copy=Amp_ROP_Res_Ersn_TF
 talents=2123132
 
-copy=Conf_ROP_CB_FP_Met
+copy=Amp_ROP_Res_Ersn_AO
 talents=2123133
 
-copy=Conf_IF_AF_LB_Kind
+copy=Amp_IF_SN_NT_OP
 talents=2131111
 
-copy=Conf_IF_AF_LB_CiS
+copy=Amp_IF_SN_NT_TF
 talents=2131112
 
-copy=Conf_IF_AF_LB_Met
+copy=Amp_IF_SN_NT_AO
 talents=2131113
 
-copy=Conf_IF_AF_UM_Kind
+copy=Amp_IF_SN_UM_OP
 talents=2131121
 
-copy=Conf_IF_AF_UM_CiS
+copy=Amp_IF_SN_UM_TF
 talents=2131122
 
-copy=Conf_IF_AF_UM_Met
+copy=Amp_IF_SN_UM_AO
 talents=2131123
 
-copy=Conf_IF_AF_FP_Kind
+copy=Amp_IF_SN_Ersn_OP
 talents=2131131
 
-copy=Conf_IF_AF_FP_CiS
+copy=Amp_IF_SN_Ersn_TF
 talents=2131132
 
-copy=Conf_IF_AF_FP_Met
+copy=Amp_IF_SN_Ersn_AO
 talents=2131133
 
-copy=Conf_IF_FO_LB_Kind
+copy=Amp_IF_CU_NT_OP
 talents=2132111
 
-copy=Conf_IF_FO_LB_CiS
+copy=Amp_IF_CU_NT_TF
 talents=2132112
 
-copy=Conf_IF_FO_LB_Met
+copy=Amp_IF_CU_NT_AO
 talents=2132113
 
-copy=Conf_IF_FO_UM_Kind
+copy=Amp_IF_CU_UM_OP
 talents=2132121
 
-copy=Conf_IF_FO_UM_CiS
+copy=Amp_IF_CU_UM_TF
 talents=2132122
 
-copy=Conf_IF_FO_UM_Met
+copy=Amp_IF_CU_UM_AO
 talents=2132123
 
-copy=Conf_IF_FO_FP_Kind
+copy=Amp_IF_CU_Ersn_OP
 talents=2132131
 
-copy=Conf_IF_FO_FP_CiS
+copy=Amp_IF_CU_Ersn_TF
 talents=2132132
 
-copy=Conf_IF_FO_FP_Met
+copy=Amp_IF_CU_Ersn_AO
 talents=2132133
 
-copy=Conf_IF_CB_LB_Kind
+copy=Amp_IF_Res_NT_OP
 talents=2133111
 
-copy=Conf_IF_CB_LB_CiS
+copy=Amp_IF_Res_NT_TF
 talents=2133112
 
-copy=Conf_IF_CB_LB_Met
+copy=Amp_IF_Res_NT_AO
 talents=2133113
 
-copy=Conf_IF_CB_UM_Kind
+copy=Amp_IF_Res_UM_OP
 talents=2133121
 
-copy=Conf_IF_CB_UM_CiS
+copy=Amp_IF_Res_UM_TF
 talents=2133122
 
-copy=Conf_IF_CB_UM_Met
+copy=Amp_IF_Res_UM_AO
 talents=2133123
 
-copy=Conf_IF_CB_FP_Kind
+copy=Amp_IF_Res_Ersn_OP
 talents=2133131
 
-copy=Conf_IF_CB_FP_CiS
+copy=Amp_IF_Res_Ersn_TF
 talents=2133132
 
-copy=Conf_IF_CB_FP_Met
+copy=Amp_IF_Res_Ersn_AO
 talents=2133133
 
-copy=Fstart_MI_AF_LB_Kind
+copy=WoP_MI_SN_NT_OP
 talents=3111111
 
-copy=Fstart_MI_AF_LB_CiS
+copy=WoP_MI_SN_NT_TF
 talents=3111112
 
-copy=Fstart_MI_AF_LB_Met
+copy=WoP_MI_SN_NT_AO
 talents=3111113
 
-copy=Fstart_MI_AF_UM_Kind
+copy=WoP_MI_SN_UM_OP
 talents=3111121
 
-copy=Fstart_MI_AF_UM_CiS
+copy=WoP_MI_SN_UM_TF
 talents=3111122
 
-copy=Fstart_MI_AF_UM_Met
+copy=WoP_MI_SN_UM_AO
 talents=3111123
 
-copy=Fstart_MI_AF_FP_Kind
+copy=WoP_MI_SN_Ersn_OP
 talents=3111131
 
-copy=Fstart_MI_AF_FP_CiS
+copy=WoP_MI_SN_Ersn_TF
 talents=3111132
 
-copy=Fstart_MI_AF_FP_Met
+copy=WoP_MI_SN_Ersn_AO
 talents=3111133
 
-copy=Fstart_MI_FO_LB_Kind
+copy=WoP_MI_CU_NT_OP
 talents=3112111
 
-copy=Fstart_MI_FO_LB_CiS
+copy=WoP_MI_CU_NT_TF
 talents=3112112
 
-copy=Fstart_MI_FO_LB_Met
+copy=WoP_MI_CU_NT_AO
 talents=3112113
 
-copy=Fstart_MI_FO_UM_Kind
+copy=WoP_MI_CU_UM_OP
 talents=3112121
 
-copy=Fstart_MI_FO_UM_CiS
+copy=WoP_MI_CU_UM_TF
 talents=3112122
 
-copy=Fstart_MI_FO_UM_Met
+copy=WoP_MI_CU_UM_AO
 talents=3112123
 
-copy=Fstart_MI_FO_FP_Kind
+copy=WoP_MI_CU_Ersn_OP
 talents=3112131
 
-copy=Fstart_MI_FO_FP_CiS
+copy=WoP_MI_CU_Ersn_TF
 talents=3112132
 
-copy=Fstart_MI_FO_FP_Met
+copy=WoP_MI_CU_Ersn_AO
 talents=3112133
 
-copy=Fstart_MI_CB_LB_Kind
+copy=WoP_MI_Res_NT_OP
 talents=3113111
 
-copy=Fstart_MI_CB_LB_CiS
+copy=WoP_MI_Res_NT_TF
 talents=3113112
 
-copy=Fstart_MI_CB_LB_Met
+copy=WoP_MI_Res_NT_AO
 talents=3113113
 
-copy=Fstart_MI_CB_UM_Kind
+copy=WoP_MI_Res_UM_OP
 talents=3113121
 
-copy=Fstart_MI_CB_UM_CiS
+copy=WoP_MI_Res_UM_TF
 talents=3113122
 
-copy=Fstart_MI_CB_UM_Met
+copy=WoP_MI_Res_UM_AO
 talents=3113123
 
-copy=Fstart_MI_CB_FP_Kind
+copy=WoP_MI_Res_Ersn_OP
 talents=3113131
 
-copy=Fstart_MI_CB_FP_CiS
+copy=WoP_MI_Res_Ersn_TF
 talents=3113132
 
-copy=Fstart_MI_CB_FP_Met
+copy=WoP_MI_Res_Ersn_AO
 talents=3113133
 
-copy=Fstart_ROP_AF_LB_Kind
+copy=WoP_ROP_SN_NT_OP
 talents=3121111
 
-copy=Fstart_ROP_AF_LB_CiS
+copy=WoP_ROP_SN_NT_TF
 talents=3121112
 
-copy=Fstart_ROP_AF_LB_Met
+copy=WoP_ROP_SN_NT_AO
 talents=3121113
 
-copy=Fstart_ROP_AF_UM_Kind
+copy=WoP_ROP_SN_UM_OP
 talents=3121121
 
-copy=Fstart_ROP_AF_UM_CiS
+copy=WoP_ROP_SN_UM_TF
 talents=3121122
 
-copy=Fstart_ROP_AF_UM_Met
+copy=WoP_ROP_SN_UM_AO
 talents=3121123
 
-copy=Fstart_ROP_AF_FP_Kind
+copy=WoP_ROP_SN_Ersn_OP
 talents=3121131
 
-copy=Fstart_ROP_AF_FP_CiS
+copy=WoP_ROP_SN_Ersn_TF
 talents=3121132
 
-copy=Fstart_ROP_AF_FP_Met
+copy=WoP_ROP_SN_Ersn_AO
 talents=3121133
 
-copy=Fstart_ROP_FO_LB_Kind
+copy=WoP_ROP_CU_NT_OP
 talents=3122111
 
-copy=Fstart_ROP_FO_LB_CiS
+copy=WoP_ROP_CU_NT_TF
 talents=3122112
 
-copy=Fstart_ROP_FO_LB_Met
+copy=WoP_ROP_CU_NT_AO
 talents=3122113
 
-copy=Fstart_ROP_FO_UM_Kind
+copy=WoP_ROP_CU_UM_OP
 talents=3122121
 
-copy=Fstart_ROP_FO_UM_CiS
+copy=WoP_ROP_CU_UM_TF
 talents=3122122
 
-copy=Fstart_ROP_FO_UM_Met
+copy=WoP_ROP_CU_UM_AO
 talents=3122123
 
-copy=Fstart_ROP_FO_FP_Kind
+copy=WoP_ROP_CU_Ersn_OP
 talents=3122131
 
-copy=Fstart_ROP_FO_FP_CiS
+copy=WoP_ROP_CU_Ersn_TF
 talents=3122132
 
-copy=Fstart_ROP_FO_FP_Met
+copy=WoP_ROP_CU_Ersn_AO
 talents=3122133
 
-copy=Fstart_ROP_CB_LB_Kind
+copy=WoP_ROP_Res_NT_OP
 talents=3123111
 
-copy=Fstart_ROP_CB_LB_CiS
+copy=WoP_ROP_Res_NT_TF
 talents=3123112
 
-copy=Fstart_ROP_CB_LB_Met
+copy=WoP_ROP_Res_NT_AO
 talents=3123113
 
-copy=Fstart_ROP_CB_UM_Kind
+copy=WoP_ROP_Res_UM_OP
 talents=3123121
 
-copy=Fstart_ROP_CB_UM_CiS
+copy=WoP_ROP_Res_UM_TF
 talents=3123122
 
-copy=Fstart_ROP_CB_UM_Met
+copy=WoP_ROP_Res_UM_AO
 talents=3123123
 
-copy=Fstart_ROP_CB_FP_Kind
+copy=WoP_ROP_Res_Ersn_OP
 talents=3123131
 
-copy=Fstart_ROP_CB_FP_CiS
+copy=WoP_ROP_Res_Ersn_TF
 talents=3123132
 
-copy=Fstart_ROP_CB_FP_Met
+copy=WoP_ROP_Res_Ersn_AO
 talents=3123133
 
-copy=Fstart_IF_AF_LB_Kind
+copy=WoP_IF_SN_NT_OP
 talents=3131111
 
-copy=Fstart_IF_AF_LB_CiS
+copy=WoP_IF_SN_NT_TF
 talents=3131112
 
-copy=Fstart_IF_AF_LB_Met
+copy=WoP_IF_SN_NT_AO
 talents=3131113
 
-copy=Fstart_IF_AF_UM_Kind
+copy=WoP_IF_SN_UM_OP
 talents=3131121
 
-copy=Fstart_IF_AF_UM_CiS
+copy=WoP_IF_SN_UM_TF
 talents=3131122
 
-copy=Fstart_IF_AF_UM_Met
+copy=WoP_IF_SN_UM_AO
 talents=3131123
 
-copy=Fstart_IF_AF_FP_Kind
+copy=WoP_IF_SN_Ersn_OP
 talents=3131131
 
-copy=Fstart_IF_AF_FP_CiS
+copy=WoP_IF_SN_Ersn_TF
 talents=3131132
 
-copy=Fstart_IF_AF_FP_Met
+copy=WoP_IF_SN_Ersn_AO
 talents=3131133
 
-copy=Fstart_IF_FO_LB_Kind
+copy=WoP_IF_CU_NT_OP
 talents=3132111
 
-copy=Fstart_IF_FO_LB_CiS
+copy=WoP_IF_CU_NT_TF
 talents=3132112
 
-copy=Fstart_IF_FO_LB_Met
+copy=WoP_IF_CU_NT_AO
 talents=3132113
 
-copy=Fstart_IF_FO_UM_Kind
+copy=WoP_IF_CU_UM_OP
 talents=3132121
 
-copy=Fstart_IF_FO_UM_CiS
+copy=WoP_IF_CU_UM_TF
 talents=3132122
 
-copy=Fstart_IF_FO_UM_Met
+copy=WoP_IF_CU_UM_AO
 talents=3132123
 
-copy=Fstart_IF_FO_FP_Kind
+copy=WoP_IF_CU_Ersn_OP
 talents=3132131
 
-copy=Fstart_IF_FO_FP_CiS
+copy=WoP_IF_CU_Ersn_TF
 talents=3132132
 
-copy=Fstart_IF_FO_FP_Met
+copy=WoP_IF_CU_Ersn_AO
 talents=3132133
 
-copy=Fstart_IF_CB_LB_Kind
+copy=WoP_IF_Res_NT_OP
 talents=3133111
 
-copy=Fstart_IF_CB_LB_CiS
+copy=WoP_IF_Res_NT_TF
 talents=3133112
 
-copy=Fstart_IF_CB_LB_Met
+copy=WoP_IF_Res_NT_AO
 talents=3133113
 
-copy=Fstart_IF_CB_UM_Kind
+copy=WoP_IF_Res_UM_OP
 talents=3133121
 
-copy=Fstart_IF_CB_UM_CiS
+copy=WoP_IF_Res_UM_TF
 talents=3133122
 
-copy=Fstart_IF_CB_UM_Met
+copy=WoP_IF_Res_UM_AO
 talents=3133123
 
-copy=Fstart_IF_CB_FP_Kind
+copy=WoP_IF_Res_Ersn_OP
 talents=3133131
 
-copy=Fstart_IF_CB_FP_CiS
+copy=WoP_IF_Res_Ersn_TF
 talents=3133132
 
-copy=Fstart_IF_CB_FP_Met
+copy=WoP_IF_Res_Ersn_AO
 talents=3133133
