@@ -4,6 +4,7 @@ target_race=demon
 iterations=5000
 threads=4
 process_priority=low
+html=Fire_Talents_1_Target
 
 
 Mage="Pyro_ROP_FO_UM_Kind"

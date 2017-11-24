@@ -1,3 +1,11 @@
+max_time=360
+vary_combat_length=0.2
+target_race=demon
+iterations=5000
+threads=4
+process_priority=low
+html=Arcane_Talents_1_Target
+
 mage="T21_Mage_Arcane"
 spec=arcane
 level=110
