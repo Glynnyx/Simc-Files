@@ -4,6 +4,7 @@ target_race=demon
 iterations=5000
 threads=4
 process_priority=low
+report_details=0
 html="C:\Users\Glynny-PC\Desktop\Github\Simc-Files\7.3.2\2. Fire\HTML Files\Talents\Fire_Talents_1_Target.html"
 
 
