@@ -4,7 +4,7 @@ target_race=demon
 iterations=5000
 threads=4
 process_priority=low
-html=C:\Users\Glynny-PC\Desktop\Github\Simc-Files\7.3.2\3. Arcane\HTLM Files\Talents\Arcane_Talents_4_Target
+html="C:\Users\Glynny-PC\Desktop\Github\Simc-Files\7.3.2\3. Arcane\HTLM Files\Talents\Arcane_Talents_4_Target"
 desired_targets=4
 
 mage="Amp_ROP_CU_Ersn_OP"
