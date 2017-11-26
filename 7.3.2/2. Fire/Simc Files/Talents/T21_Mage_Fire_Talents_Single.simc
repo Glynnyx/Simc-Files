@@ -4,10 +4,10 @@ target_race=demon
 iterations=5000
 threads=4
 process_priority=low
-html=Fire_Talents_1_Target
+html=C:\Users\Glynny-PC\Desktop\Github\Simc-Files\7.3.2\2. Fire\HTML Files\Talents\Fire_Talents_1_Target.html
 
 
-Mage="Pyro_ROP_FO_UM_Kind"
+mage="Pyro_ROP_FO_UM_Kind"
 spec=fire
 level=110
 race=troll
