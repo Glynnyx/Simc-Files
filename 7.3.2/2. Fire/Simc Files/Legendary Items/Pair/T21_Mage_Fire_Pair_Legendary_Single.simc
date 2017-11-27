@@ -9,7 +9,7 @@ chart_show_relative_difference=1
 html="C:\Users\Glynny-PC\Desktop\Github\Simc-Files\7.3.2\2. Fire\HTML Files\Legendary Items\Pair\Mage_Fire_Pair_Legendary_Single.html"
 
 
-mage="No_Legendary"
+mage="T21_Mage_Fire"
 spec=fire
 level=110
 race=troll

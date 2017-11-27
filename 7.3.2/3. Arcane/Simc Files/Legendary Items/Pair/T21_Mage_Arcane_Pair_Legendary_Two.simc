@@ -9,7 +9,7 @@ chart_show_relative_difference=1
 html="C:\Users\Glynny-PC\Desktop\Github\Simc-Files\7.3.2\3. Arcane\HTML Files\Legendary Items\Pair\Mage_Arcane_Pair_Legendary_Two.html"
 desired_targets=2
 
-mage="T21_Mage_Arcane_Non_Tier"
+mage="T21_Mage_Arcane_Tier"
 spec=arcane
 level=110
 race=troll
@@ -305,5 +305,3 @@ trinket1=,id=144259,ilevel=1000
 copy=Insignia_Kilt,T21_Mage_Arcane_Tier
 finger1=insignia_of_the_grand_army,id=152626,ilevel=1000
 legs=,id=132451,ilevel=1000
-
-

@@ -38,7 +38,7 @@ set_bonus=tier20_2pc=1
 set_bonus=tier21_2pc=1
 set_bonus=tier21_4pc=1
 
-mage="T21_Mage_Arcane_Non_Tier"
+mage="T21_Mage_Arcane_Tier"
 spec=arcane
 level=110
 race=troll
@@ -304,5 +304,3 @@ trinket1=,id=144259,ilevel=1000
 copy=Insignia_Kilt,T21_Mage_Arcane_Tier
 finger1=insignia_of_the_grand_army,id=152626,ilevel=1000
 legs=,id=132451,ilevel=1000
-
-
