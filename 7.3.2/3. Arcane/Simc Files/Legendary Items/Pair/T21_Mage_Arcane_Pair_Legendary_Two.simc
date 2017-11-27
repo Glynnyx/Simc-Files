@@ -6,8 +6,8 @@ threads=4
 process_priority=low
 report_details=0
 chart_show_relative_difference=1
-html="C:\Users\Glynny-PC\Desktop\Github\Simc-Files\7.3.2\3. Arcane\HTML Files\Legendary Items\Single\Mage_Arcane_Single_Legendary_Four.html"
-desired_targets=4
+html="C:\Users\Glynny-PC\Desktop\Github\Simc-Files\7.3.2\3. Arcane\HTML Files\Legendary Items\Pair\Mage_Arcane_Pair_Legendary_Two.html"
+desired_targets=2
 
 mage="No_Legendary"
 spec=arcane

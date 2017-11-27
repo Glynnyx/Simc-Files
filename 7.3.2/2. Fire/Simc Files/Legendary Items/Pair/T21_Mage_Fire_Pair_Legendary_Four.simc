@@ -6,8 +6,8 @@ threads=4
 process_priority=low
 report_details=0
 chart_show_relative_difference=1
-html="C:\Users\Glynny-PC\Desktop\Github\Simc-Files\7.3.2\2. Fire\HTML Files\Legendary Items\Single\Mage_Fire_Single_Legendary_Single.html"
-
+html="C:\Users\Glynny-PC\Desktop\Github\Simc-Files\7.3.2\2. Fire\HTML Files\Legendary Items\Pair\Mage_Fire_Pair_Legendary_Four.html"
+desired_targets=4
 
 mage="No_Legendary"
 spec=fire
@@ -15,7 +15,7 @@ level=110
 race=troll
 role=spell
 position=back
-talents=1022021
+talents=3021033
 artifact=54:0:0:0:0:748:1:749:4:750:4:751:4:752:4:753:4:754:4:755:4:756:4:757:4:758:1:759:1:760:1:761:1:762:1:763:1:1340:1:1372:1:1533:4:1534:1:1535:1:1536:24:1640:1
 crucible=1739:1780:751/1739:1780:1533/1739:1780:751
 infinite_mana=1
