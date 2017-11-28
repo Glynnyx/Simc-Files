@@ -1,0 +1,72 @@
+max_time=360
+vary_combat_length=0.2
+target_race=demon
+iterations=5000
+threads=4
+process_priority=low
+report_details=0
+chart_show_relative_difference=1
+html="C:\Users\Glynny-PC\Desktop\Github\Simc-Files\7.3.2\2. Fire\HTML Files\Racials\Mage_Fire_Races.html"
+
+mage="Troll"
+spec=fire
+level=110
+race=troll
+role=spell
+position=back
+talents=1022021
+artifact=54:0:0:0:0:748:1:749:4:750:4:751:4:752:4:753:4:754:4:755:4:756:4:757:4:758:1:759:1:760:1:761:1:762:1:763:1:1340:1:1372:1:1533:4:1534:1:1535:1:1536:24:1640:1
+crucible=1739:1780:751/1739:1780:1533/1739:1780:751
+
+head=runebound_collar,id=152138,bonus_id=3612/1502
+neck=chain_of_the_unmaker,id=152283,bonus_id=3612/1502,enchant=mark_of_the_hidden_satyr
+shoulders=runebound_mantle,id=152141,bonus_id=3612/1502
+back=runebound_cape,id=152136,bonus_id=3612/1502,enchant=binding_of_intellect
+chest=gambeson_of_sargeras_corruption,id=152679,bonus_id=3612/1502
+wrists=marquee_bindings_of_the_sun_king,id=132406,bonus_id=3630
+hands=handwraps_of_inevitable_doom,id=152680,bonus_id=3612/1502
+waist=cord_of_blossoming_petals,id=151952,bonus_id=3612/1502
+legs=runebound_leggings,id=152139,bonus_id=3612/1502
+feet=whisperstep_runners,id=151939,bonus_id=3612/1502
+finger1=band_of_the_sargerite_smith,id=152064,bonus_id=3612/1502,enchant=binding_of_critical_strike
+finger2=shard_of_the_exodar,id=132410,bonus_id=3630,gem_id=151580,enchant=binding_of_critical_strike
+trinket1=acrid_catalyst_injector,id=151955,bonus_id=3612/1502
+trinket2=amanthuls_vision,id=154172,bonus_id=4213
+main_hand=felomelorn,id=128820,bonus_id=730,gem_id=155849/152026/155849,relic_id=3612:1512/3612:1502/3612:1512
+off_hand=heart_of_the_phoenix,id=133959
+
+# Gear Summary
+# gear_ilvl=973.88
+# gear_stamina=62244
+# gear_intellect=66680
+# gear_crit_rating=16141
+# gear_haste_rating=9023
+# gear_mastery_rating=8775
+# gear_versatility_rating=3875
+# gear_armor=2457
+# set_bonus=tier21_2pc=1
+# set_bonus=tier21_4pc=1
+firestarter_time=20
+
+copy=Human,Troll
+race=human
+copy=Orc,Troll
+race=orc
+copy=Dwarf,Troll
+race=dwarf
+copy=Undead,Troll
+race=undead
+copy=Night_Elf,Troll
+race=night_elf
+copy=Gnome,Troll
+race=gnome
+copy=Draenei,Troll
+race=draenei
+copy=Blood_Elf,Troll
+race=blood_elf
+copy=Worgen,Troll
+race=worgen
+copy=Goblin,Troll
+race=goblin
+copy=Pandaren,Troll
+race=pandaren
