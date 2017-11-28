@@ -16,7 +16,7 @@ level=110
 race=troll
 role=spell
 position=back
-talents=2022021
+talents=1022021
 artifact=54:0:0:0:0:748:1:749:4:750:4:751:4:752:4:753:4:754:4:755:4:756:4:757:4:758:1:759:1:760:1:761:1:762:1:763:1:1340:1:1372:1:1533:4:1534:1:1535:1:1536:24:1640:1
 crucible=1739:1780:751/1739:1780:1533/1739:1780:751
 infinite_mana=1
@@ -31,7 +31,7 @@ waist=cord_of_blossoming_petals,id=151952,bonus_id=3612/1502
 legs=runebound_leggings,id=152139,bonus_id=3612/1502
 feet=whisperstep_runners,id=151939,bonus_id=3612/1502
 finger1=band_of_the_sargerite_smith,id=152064,bonus_id=3612/1502,enchant=binding_of_critical_strike
-finger1=zealous_tormentors_ring,id=152284,ilevel=960,enchant=binding_of_critical_strike
+finger2=zealous_tormentors_ring,id=152284,ilevel=960,enchant=binding_of_critical_strike
 trinket1=acrid_catalyst_injector,id=151955,bonus_id=3612/1502
 trinket2=amanthuls_vision,id=154172,bonus_id=4213
 main_hand=felomelorn,id=128820,bonus_id=730,gem_id=155849/152026/155849,relic_id=3612:1512/3612:1502/3612:1512
