@@ -1,0 +1,50 @@
+max_time=360
+vary_combat_length=0.2
+target_race=demon
+iterations=15000
+threads=4
+process_priority=low
+report_details=0
+calculate_scale_factors=1
+chart_show_relative_difference=1
+desired_targets=2
+html="C:\Users\Glynny-PC\Desktop\Github\Simc-Files\7.3.2\1. Frost\HTML Files\Stat Weights\Mage_Frost_Statweights_2_Target.html"
+
+mage="T21_Mage_Frost"
+spec=frost
+level=110
+race=dwarf
+role=spell
+position=back
+talents=2033031
+artifact=53:0:0:0:0:783:1:784:4:785:4:786:4:787:4:788:4:789:4:790:4:791:4:792:4:793:1:794:1:795:1:796:1:797:1:798:1:1296:1:1373:1:1537:4:1538:1:1539:1:1540:24:1641:1
+crucible=1739:1780:789/1739:1780:789/1739:1780:789
+
+head=runebound_collar,id=152138,bonus_id=3612/1502
+neck=chain_of_the_unmaker,id=152283,bonus_id=3612/1502,enchant=mark_of_the_hidden_satyr
+shoulders=runebound_mantle,id=152141,bonus_id=3612/1502
+back=drape_of_the_arcane_tempest,id=147145,bonus_id=3563/1512,enchant=binding_of_intellect
+chest=runebound_tunic,id=152140,bonus_id=3612/1502
+wrists=magtheridons_banished_bracers,id=138140,bonus_id=3630
+hands=gloves_of_the_arcane_tempest,id=147146,bonus_id=3563/1512
+waist=cord_of_blossoming_petals,id=151952,bonus_id=3612/1502
+legs=runebound_leggings,id=152139,bonus_id=3612/1502
+feet=lady_dacidions_silk_slippers,id=151945,bonus_id=3612/1502
+finger1=seal_of_the_portalmaster,id=152063,bonus_id=3612/1502,enchant=binding_of_versatility
+finger2=shard_of_the_exodar,id=132410,bonus_id=3630,gem_id=151585,enchant=binding_of_versatility
+trinket1=acrid_catalyst_injector,id=151955,bonus_id=3612/1502
+trinket2=amanthuls_vision,id=154172,bonus_id=4213
+main_hand=ebonchill,id=128862,bonus_id=731,gem_id=155850/155846/155850,relic_id=3612:1512/3612:1512/3612:1512
+
+# Gear Summary
+# gear_ilvl=967.27
+# gear_stamina=59745
+# gear_intellect=65839
+# gear_crit_rating=10640
+# gear_haste_rating=12025
+# gear_mastery_rating=5632
+# gear_versatility_rating=9139
+# gear_armor=2389
+# set_bonus=tier20_2pc=1
+# set_bonus=tier21_2pc=1
+# set_bonus=tier21_4pc=1
