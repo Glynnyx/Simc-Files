@@ -1,0 +1,87 @@
+max_time=360
+vary_combat_length=0.2
+target_race=demon
+iterations=5000
+threads=4
+process_priority=low
+report_details=0
+desired_targets=2
+chart_show_relative_difference=1
+html="C:\Users\Glynny-PC\Desktop\Github\Simc-Files\7.3.2\3. Arcane\HTML Files\Relics\Mage_Arcane_Relics_2_Targets.html"
+
+mage="T21_Mage_Arcane"
+spec=arcane
+level=110
+race=troll
+role=spell
+position=back
+talents=2022031
+artifact=4:0:0:0:0:72:4:73:1:74:4:75:4:77:4:78:1:79:4:80:1:81:4:82:4:83:4:84:4:86:1:87:1:290:1:1169:1:1339:1:1371:1:1529:4:1530:1:1531:1:1532:24:1639:1
+crucible=1739:1780:1529/1739:1780:82/1739:1780:1529
+
+head=runebound_collar,id=152138,bonus_id=3612/1502
+neck=chain_of_the_unmaker,id=152283,bonus_id=3612/1502,enchant=mark_of_the_hidden_satyr
+shoulders=runebound_mantle,id=152141,bonus_id=3612/1502
+back=drape_of_the_arcane_tempest,id=147145,bonus_id=3563/1512,enchant=binding_of_intellect
+chest=runebound_tunic,id=152140,bonus_id=3612/1502
+wrists=blooddrenched_bindings,id=151954,bonus_id=3612/1502
+hands=gloves_of_the_arcane_tempest,id=147146,bonus_id=3563/1512
+waist=cord_of_blossoming_petals,id=151952,bonus_id=3612/1502
+legs=runebound_leggings,id=152139,bonus_id=3612/1502
+feet=lady_dacidions_silk_slippers,id=151945,bonus_id=3612/1502
+finger1=soul_of_the_archmage,id=151642,bonus_id=3630,gem_id=151585,enchant=binding_of_versatility
+finger2=shard_of_the_exodar,id=132410,bonus_id=3630,gem_id=151585,enchant=binding_of_versatility
+trinket1=tarnished_sentinel_medallion,id=147017,bonus_id=3563/1512
+trinket2=amanthuls_vision,id=154172,bonus_id=4213
+main_hand=aluneth,id=127857,gem_id=155846/155850/155846,relic_id=3612:1512/3612:1512/3612:1512
+
+# Gear Summary
+# gear_ilvl=965.27
+# gear_stamina=59745
+# gear_intellect=61267
+# gear_crit_rating=12755
+# gear_haste_rating=11973
+# gear_mastery_rating=8207
+# gear_versatility_rating=6685
+# gear_armor=2364
+# set_bonus=tier20_2pc=1
+# set_bonus=tier21_2pc=1
+# set_bonus=tier21_4pc=1
+
+default_actions=1
+artifact=4:0:0:0:0:72:4:73:1:74:4:75:4:77:4:78:1:79:4:80:1:81:4:82:4:83:4:84:4:86:1:87:1:290:1:1169:1:1339:1:1371:1:1529:4:1530:1:1531:1:1532:24:1639:1
+main_hand=aluneth,id=127857,ilevel=999
+name=no_trait
+
+copy=AegwynnsWrath
+artifact=4:140827:0:0:0:72:4:73:1:74:4:75:5:77:4:78:1:79:4:80:1:81:4:82:4:83:4:84:4:86:1:87:1:290:1:1169:1:1339:1:1371:1:1529:4:1530:1:1531:1:1532:24:1639:1
+copy=AegwynnsFury
+artifact=4:140810:0:0:0:72:4:73:1:74:4:75:4:77:4:78:1:79:5:80:1:81:4:82:4:83:4:84:4:86:1:87:1:290:1:1169:1:1339:1:1371:1:1529:4:1530:1:1531:1:1532:24:1639:1
+copy=EverywhereAtOnce
+artifact=4:137547:0:0:0:72:4:73:1:74:4:75:4:77:4:78:1:79:4:80:1:81:4:82:4:83:5:84:4:86:1:87:1:290:1:1169:1:1339:1:1371:1:1529:4:1530:1:1531:1:1532:24:1639:1
+copy=ForceBarrier
+artifact=4:137490:0:0:0:72:4:73:1:74:4:75:4:77:4:78:1:79:4:80:1:81:4:82:4:83:4:84:5:86:1:87:1:290:1:1169:1:1339:1:1371:1:1529:4:1530:1:1531:1:1532:24:1639:1
+copy=ArcanePurification
+artifact=4:140812:0:0:0:72:4:73:1:74:4:75:4:77:5:78:1:79:4:80:1:81:4:82:4:83:4:84:4:86:1:87:1:290:1:1169:1:1339:1:1371:1:1529:4:1530:1:1531:1:1532:24:1639:1
+copy=EtherealSensitivity
+artifact=4:139269:0:0:0:72:4:73:1:74:4:75:4:77:4:78:1:79:4:80:1:81:5:82:4:83:4:84:4:86:1:87:1:290:1:1169:1:1339:1:1371:1:1529:4:1530:1:1531:1:1532:24:1639:1
+copy=BlastingRod
+artifact=4:138227:0:0:0:72:4:73:1:74:5:75:4:77:4:78:1:79:4:80:1:81:4:82:4:83:4:84:4:86:1:87:1:290:1:1169:1:1339:1:1371:1:1529:4:1530:1:1531:1:1532:24:1639:1
+copy=AegwynnsImperative
+artifact=4:141515:0:0:0:72:4:73:1:74:4:75:4:77:4:78:1:79:4:80:1:81:4:82:5:83:4:84:4:86:1:87:1:290:1:1169:1:1339:1:1371:1:1529:4:1530:1:1531:1:1532:24:1639:1
+copy=TorrentialBarrage
+artifact=4:137420:0:0:0:72:5:73:1:74:4:75:4:77:4:78:1:79:4:80:1:81:4:82:4:83:4:84:4:86:1:87:1:290:1:1169:1:1339:1:1371:1:1529:4:1530:1:1531:1:1532:24:1639:1
+copy=AegwynnsIntensity
+artifact=4:147079:0:0:0:72:4:73:1:74:4:75:4:77:4:78:1:79:4:80:1:81:4:82:4:83:4:84:4:86:1:87:1:290:1:1169:1:1339:1:1371:1:1529:5:1530:1:1531:1:1532:24:1639:1
+copy="+1_wep_ilvl",no_trait
+main_hand=aluneth,id=127857,ilevel=1000
+copy="+2_wep_ilvl",no_trait
+main_hand=aluneth,id=127857,ilevel=1001
+copy="+3_wep_ilvl",no_trait
+main_hand=aluneth,id=127857,ilevel=1002
+copy="+4_wep_ilvl",no_trait
+main_hand=aluneth,id=127857,ilevel=1003
+copy="+5_wep_ilvl",no_trait
+main_hand=aluneth,id=127857,ilevel=1004
+copy="+6_wep_ilvl",no_trait
+main_hand=aluneth,id=127857,ilevel=1005
