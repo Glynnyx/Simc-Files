@@ -1,3 +1,0 @@
-start "simc" /d "C:\Users\Glynny-PC\Desktop\Github\simc\" /wait simc.exe "C:\Users\Glynny-PC\Desktop\Github\Simc-Files\7.3.2\1. Frost\Simc Files\Legendary Items\Pair\T21_Mage_Frost_Pair_Legendary_Single.simc"
-start "simc" /d "C:\Users\Glynny-PC\Desktop\Github\simc\" /wait simc.exe "C:\Users\Glynny-PC\Desktop\Github\Simc-Files\7.3.2\1. Frost\Simc Files\Legendary Items\Pair\T21_Mage_Frost_Pair_Legendary_Two.simc"
-start "simc" /d "C:\Users\Glynny-PC\Desktop\Github\simc\" /wait simc.exe "C:\Users\Glynny-PC\Desktop\Github\Simc-Files\7.3.2\1. Frost\Simc Files\Legendary Items\Pair\T21_Mage_Frost_Pair_Legendary_Four.simc"
