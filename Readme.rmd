@@ -9,6 +9,4 @@ This will be my main repository for uploading all files relating to the Simc thr
     * Type of sim (e.g. Legendary Combos Single Target, Talent Combos Multi Target etc.)
     * This will also include any .bat files I use to automate the process.
 
-## **Projects Progress:**
-
-- 7.3.2: Will be released on Antorus release date.
+Waiting for Bfa launch to do more things.
