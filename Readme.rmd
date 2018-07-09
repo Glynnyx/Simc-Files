@@ -8,5 +8,7 @@ This will be my main repository for uploading all files relating to the Simc thr
     * Specs
     * Type of sim (e.g. Legendary Combos Single Target, Talent Combos Multi Target etc.)
     * This will also include any .bat files I use to automate the process.
+	* 
 
-Waiting for Bfa launch to do more things.
+- Todo in Bfa:
+    * Stat Distribution e.g. Fire haste caps, Frost behavriour around 33% crit etc.
