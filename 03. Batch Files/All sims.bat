@@ -23,6 +23,10 @@ rem Start of 04. Azerite Trait Sims
 
 rem Start of 05. Neck Enchant Sims
 
+start "simc" /d "C:\Users\glynnm\Desktop\git\simc" /wait simc.exe "C:\Users\glynnm\Desktop\git\Simc-Files\02. Battle For Azeroth\PreRaid\Mage\01. Frost\Simc Files\05. Neck Enchants\01. Single_Target_Neck_Enchant.simc"
+start "simc" /d "C:\Users\glynnm\Desktop\git\simc" /wait simc.exe "C:\Users\glynnm\Desktop\git\Simc-Files\02. Battle For Azeroth\PreRaid\Mage\01. Frost\Simc Files\05. Neck Enchants\02. Two_Target_Neck_Enchant.simc"
+start "simc" /d "C:\Users\glynnm\Desktop\git\simc" /wait simc.exe "C:\Users\glynnm\Desktop\git\Simc-Files\02. Battle For Azeroth\PreRaid\Mage\01. Frost\Simc Files\05. Neck Enchants\03. Four_Target_Neck_Enchant.simc"
+
 
 rem Start of 06. Stats Sims
 
