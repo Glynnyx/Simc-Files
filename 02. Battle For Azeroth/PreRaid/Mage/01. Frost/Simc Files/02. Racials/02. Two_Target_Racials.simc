@@ -6,7 +6,7 @@ process_priority=low
 report_details=0
 chart_show_relative_difference=1
 desired_targets=2
-html="C:\Users\glynnm\Desktop\git\Simc-Files\02. Battle For Azeroth\8.0\Mage\01. Frost\HTML Files\02. Racials\02. Two_Target_Racials.html"
+html="C:\Users\glynnm\Desktop\git\Simc-Files\02. Battle For Azeroth\PreRaid\Mage\01. Frost\HTML Files\02. Racials\02. Two_Target_Racials.html"
 
 
 mage="Dwarf"

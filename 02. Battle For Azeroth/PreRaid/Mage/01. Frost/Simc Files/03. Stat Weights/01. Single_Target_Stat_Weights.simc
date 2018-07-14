@@ -6,7 +6,7 @@ process_priority=low
 report_details=0
 chart_show_relative_difference=1
 calculate_scale_factors=1
-html="C:\Users\glynnm\Desktop\git\Simc-Files\02. Battle For Azeroth\8.0\Mage\01. Frost\HTML Files\03. Stat Weights\01. Single_Target_Stat_Weights.html"
+html="C:\Users\glynnm\Desktop\git\Simc-Files\02. Battle For Azeroth\PreRaid\Mage\01. Frost\HTML Files\03. Stat Weights\01. Single_Target_Stat_Weights.html"
 
 
 mage="T21_Mage_Frost"
