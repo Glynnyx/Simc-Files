@@ -22,8 +22,8 @@ start "simc" /d "C:\Users\Glynny-PC\Desktop\Github\simc" /wait simc.exe "C:\User
 rem **Start of 04. Legendary Items**
 rem Frost
 start "simc" /d "C:\Users\Glynny-PC\Desktop\Github\simc" /wait simc.exe "C:\Users\Glynny-PC\Desktop\Github\Simc-Files\02. Battle For Azeroth\PreRaid\Mage\01. Frost\Simc Files\04. Legendary Items\01. Single_Legendary_items.simc"
-start "simc" /d "C:\Users\Glynny-PC\Desktop\Github\simc" /wait simc.exe "C:\Users\Glynny-PC\Desktop\Github\Simc-Files\02. Battle For Azeroth\PreRaid\Mage\01. Frost\Simc Files\04. Legendary Items\01. Two_Legendary_items.simc"
-start "simc" /d "C:\Users\Glynny-PC\Desktop\Github\simc" /wait simc.exe "C:\Users\Glynny-PC\Desktop\Github\Simc-Files\02. Battle For Azeroth\PreRaid\Mage\01. Frost\Simc Files\04. Legendary Items\01. Four_Legendary_items.simc"
+start "simc" /d "C:\Users\Glynny-PC\Desktop\Github\simc" /wait simc.exe "C:\Users\Glynny-PC\Desktop\Github\Simc-Files\02. Battle For Azeroth\PreRaid\Mage\01. Frost\Simc Files\04. Legendary Items\02. Two_Legendary_items.simc"
+start "simc" /d "C:\Users\Glynny-PC\Desktop\Github\simc" /wait simc.exe "C:\Users\Glynny-PC\Desktop\Github\Simc-Files\02. Battle For Azeroth\PreRaid\Mage\01. Frost\Simc Files\04. Legendary Items\03. Four_Legendary_items.simc"
 
 
 
