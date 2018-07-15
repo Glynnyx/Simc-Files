@@ -6,7 +6,7 @@ process_priority=low
 report_details=0
 chart_show_relative_difference=1
 desired_targets=4
-html="C:\Users\glynnm\Desktop\git\Simc-Files\02. Battle For Azeroth\PreRaid\Mage\01. Frost\HTML Files\05. Neck Enchants\03. Four_Target_Neck_Enchant.html"
+html="C:\Users\Glynny-PC\Desktop\Github\Simc-Files\02. Battle For Azeroth\PreRaid\Mage\01. Frost\HTML Files\01. Talents\03. Four_Target_Neck_Enchant.html"
 
 
 mage="No_Enchant"

@@ -6,7 +6,7 @@ process_priority=low
 report_details=0
 chart_show_relative_difference=1
 desired_targets=2
-html="C:\Users\glynnm\Desktop\git\Simc-Files\02. Battle For Azeroth\PreRaid\Mage\01. Frost\HTML Files\05. Neck Enchants\02. Two_Target_Neck_Enchant.html"
+html="C:\Users\Glynny-PC\Desktop\Github\Simc-Files\02. Battle For Azeroth\PreRaid\Mage\01. Frost\HTML Files\01. Talents\02. Two_Target_Neck_Enchant.html"
 
 
 mage="No_Enchant"
@@ -123,6 +123,8 @@ main_hand=ebonchill,id=128862,bonus_id=731,gem_id=155850/155846/155850,relic_id=
 # set_bonus=tier21_4pc=1
 
 
-profileset."Claw"+=neck=chain_of_the_unmaker,id=152283,bonus_id=3612/1502,enchant=mark_of_the_claw
-profileset."Satyr"+=neck=chain_of_the_unmaker,id=152283,bonus_id=3612/1502,enchant=mark_of_the_hidden_satyr
-profileset."Trained_Soldier"+=neck=chain_of_the_unmaker,id=152283,bonus_id=3612/1502,enchant=mark_of_the_trained_soldier
+profilesets."Shard_KJBW"+=finger1=,id=132410,ilevel=1000,gems=200crit,enchant=200crit,trinket1=,id=144259,ilevel=1000
+profilesets."Shard_Insignia"+=finger1=,id=132410,ilevel=1000,gems=200crit,enchant=200crit,finger2=insignia_of_the_grand_army,id=152626,ilevel=1000
+profilesets."Sephuz_KJBW"+=finger1=,id=132452,ilevel=1000,gems=200crit,enchant=200crit,trinket1=,id=144259,ilevel=1000
+profilesets."Sephuz_Insignia"+=finger1=,id=132452,ilevel=1000,gems=200crit,enchant=200crit,finger2=insignia_of_the_grand_army,id=152626,ilevel=1000
+profilesets."Insignia_KJBW"+=finger1=insignia_of_the_grand_army,id=152626,ilevel=1000,trinket1=,id=144259,ilevel=1000

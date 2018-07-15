@@ -4,7 +4,7 @@ iterations=5000
 threads=4
 process_priority=low
 dps_plot_stat=haste
-html="C:\Users\glynnm\Desktop\git\Simc-Files\02. Battle For Azeroth\PreRaid\Mage\01. Frost\HTML Files\06. Stats\02. Single_Target_Stats_Plot_Haste.html"
+html="C:\Users\Glynny-PC\Desktop\Github\Simc-Files\02. Battle For Azeroth\PreRaid\Mage\01. Frost\HTML Files\06. Stats\02. Single_Target_Stats_Plot_Haste.html"
 
 
 mage="T21_Mage_Frost"
