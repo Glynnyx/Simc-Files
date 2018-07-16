@@ -5,10 +5,11 @@ threads=4
 process_priority=low
 report_details=0
 chart_show_relative_difference=1
-html="C:\Users\Glynny-PC\Desktop\Github\Simc-Files\02. Battle For Azeroth\PreRaid\Mage\01. Frost\HTML Files\03. Stat Weights\01. Single_Target_Stat_Weights.html"
+desired_targets=2
+html="C:\Users\Glynny-PC\Desktop\Github\Simc-Files\02. Battle For Azeroth\PreRaid\Mage\03. Arcane\HTML Files\02. Racials\02. Two_Target_Racials.html"
 
 
-mage="T21_Mage_Arcane"
+mage="troll"
 spec=arcane
 level=110
 race=troll
@@ -110,3 +111,17 @@ finger2=seal_of_the_portalmaster,id=152063,bonus_id=3630/502,gem_id=151585,encha
 trinket1=tarnished_sentinel_medallion,id=147017,bonus_id=3563/1512
 trinket2=amanthuls_vision,id=154172,bonus_id=4213
 main_hand=aluneth,id=127857,ilevel=251,azerite_level=256
+
+
+profileset."Human"+=race=human
+profileset."Orc"+=race=orc
+profileset."Dwarf"+=race=dwarf
+profileset."Undead"+=race=undead
+profileset."Night_Elf"+=race=night_elf
+profileset."Gnome"+=race=gnome
+profileset."Draenei"+=race=draenei
+profileset."Blood_Elf"+=race=blood_elf
+profileset."Worgen"+=race=worgen
+profileset."Goblin"+=race=goblin
+profileset."Pandaren"+=race=pandaren
+profileset."Void_Elf"+=race=void_elf

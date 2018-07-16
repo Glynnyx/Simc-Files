@@ -4,7 +4,7 @@ level=110
 race=troll
 role=spell
 position=back
-talents=1022021
+talents=0000000
 
 # Default consumables
 potion=prolonged_power

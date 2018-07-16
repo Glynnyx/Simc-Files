@@ -4,8 +4,6 @@ start "simc" /d "C:\Users\Glynny-PC\Desktop\Github\simc" /wait simc.exe "C:\User
 start "simc" /d "C:\Users\Glynny-PC\Desktop\Github\simc" /wait simc.exe "C:\Users\Glynny-PC\Desktop\Github\Simc-Files\02. Battle For Azeroth\PreRaid\Mage\01. Frost\Simc Files\01. Talents\02. Two_Target_Talents.simc"
 start "simc" /d "C:\Users\Glynny-PC\Desktop\Github\simc" /wait simc.exe "C:\Users\Glynny-PC\Desktop\Github\Simc-Files\02. Battle For Azeroth\PreRaid\Mage\01. Frost\Simc Files\01. Talents\03. Four_Target_Talents.simc"
 
-rem Fire
-
 rem **Start of 02. Racial Sims**
 rem Frost
 start "simc" /d "C:\Users\Glynny-PC\Desktop\Github\simc" /wait simc.exe "C:\Users\Glynny-PC\Desktop\Github\Simc-Files\02. Battle For Azeroth\PreRaid\Mage\01. Frost\Simc Files\02. Racials\01. Single_Target_Racials.simc"

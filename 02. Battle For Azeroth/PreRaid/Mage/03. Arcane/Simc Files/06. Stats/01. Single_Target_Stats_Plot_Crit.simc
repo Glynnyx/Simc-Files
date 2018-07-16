@@ -5,7 +5,8 @@ threads=4
 process_priority=low
 report_details=0
 chart_show_relative_difference=1
-html="C:\Users\Glynny-PC\Desktop\Github\Simc-Files\02. Battle For Azeroth\PreRaid\Mage\01. Frost\HTML Files\03. Stat Weights\01. Single_Target_Stat_Weights.html"
+dps_plot_stat=crit
+html="C:\Users\Glynny-PC\Desktop\Github\Simc-Files\02. Battle For Azeroth\PreRaid\Mage\03. Arcane\HTML Files\06. Stats\01. Single_Target_Stats_Plot_Crit.html"
 
 
 mage="T21_Mage_Arcane"
@@ -96,7 +97,7 @@ actions.movement+=/arcane_orb
 actions.movement+=/supernova
 
 head=runebound_collar,id=152138,bonus_id=3612/1502
-neck=chain_of_the_unmaker,id=152283,bonus_id=3612/1502,enchant=mark_of_the_hidden_satyr
+neck=chain_of_the_unmaker,id=152283,bonus_id=3612/1502
 shoulders=runebound_mantle,id=152141,bonus_id=3612/1502
 back=runebound_cape,id=152136,bonus_id=3563/1512,enchant=binding_of_intellect
 chest=runebound_tunic,id=152140,bonus_id=3612/1502
@@ -110,3 +111,7 @@ finger2=seal_of_the_portalmaster,id=152063,bonus_id=3630/502,gem_id=151585,encha
 trinket1=tarnished_sentinel_medallion,id=147017,bonus_id=3563/1512
 trinket2=amanthuls_vision,id=154172,bonus_id=4213
 main_hand=aluneth,id=127857,ilevel=251,azerite_level=256
+
+profileset."Claw"+=neck=chain_of_the_unmaker,id=152283,bonus_id=3612/1502,enchant=mark_of_the_claw
+profileset."Satyr"+=neck=chain_of_the_unmaker,id=152283,bonus_id=3612/1502,enchant=mark_of_the_hidden_satyr
+profileset."Trained_Soldier"+=neck=chain_of_the_unmaker,id=152283,bonus_id=3612/1502,enchant=mark_of_the_trained_soldier
