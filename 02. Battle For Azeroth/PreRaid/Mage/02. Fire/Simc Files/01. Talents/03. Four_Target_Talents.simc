@@ -5,8 +5,7 @@ threads=4
 process_priority=low
 report_details=0
 chart_show_relative_difference=1
-desired_targets=2
-html="C:\Users\Glynny-PC\Desktop\Github\Simc-Files\02. Battle For Azeroth\PreRaid\Mage\02. Fire\HTML Files\01. Talents\03. Four_Target_Racials.html"
+html="C:\Users\Glynny-PC\Desktop\Github\Simc-Files\02. Battle For Azeroth\PreRaid\Mage\02. Fire\HTML Files\01. Talents\01. Single_Target_Racials.html"
 
 
 mage="T21_Mage_Fire"

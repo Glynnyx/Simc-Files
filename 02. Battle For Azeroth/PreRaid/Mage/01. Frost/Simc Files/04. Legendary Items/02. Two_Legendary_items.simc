@@ -124,7 +124,6 @@ main_hand=ebonchill,id=128862,ilevel=251
 # set_bonus=tier21_4pc=1
 
 
-profileset."sfos_icetime"+=talents=2011031
 profileset."sfos_icetime"+=head=,id=151810,ilevel=265
 profileset."sfos_icetime"+=shoulder=,id=144260,ilevel=265
 profileset."sfos_mag"+=talents=2011031
@@ -145,7 +144,7 @@ profileset."sfos_sephuz"+=finger2=,id=132452,enchant_id=5428,gem_id=151583,ileve
 profileset."sfos_shard"+=talents=2011031
 profileset."sfos_shard"+=head=,id=151810,ilevel=265
 profileset."sfos_shard"+=finger2=,id=132410,enchant_id=5428,gem_id=151583,ilevel=265
-profileset."sfos_soul"+=talents=2011031
+profileset."sfos_soul"+=talents=2013031
 profileset."sfos_soul"+=head=,id=151810,ilevel=265
 profileset."sfos_soul"+=finger2=,id=151642,enchant_id=5428,gem_id=151583,ilevel=265
 profileset."icetime_mag"+=talents=2011031
@@ -166,7 +165,7 @@ profileset."icetime_sephuz"+=finger2=,id=132452,enchant_id=5428,gem_id=151583,il
 profileset."icetime_shard"+=talents=2011031
 profileset."icetime_shard"+=shoulder=,id=144260,ilevel=265
 profileset."icetime_shard"+=finger2=,id=132410,enchant_id=5428,gem_id=151583,ilevel=265
-profileset."icetime_soul"+=talents=2011031
+profileset."icetime_soul"+=talents=2013031
 profileset."icetime_soul"+=shoulder=,id=144260,ilevel=265
 profileset."icetime_soul"+=finger2=,id=151642,enchant_id=5428,gem_id=151583,ilevel=265
 profileset."mag_vashj"+=talents=2011031
@@ -184,7 +183,7 @@ profileset."mag_sephuz"+=finger2=,id=132452,enchant_id=5428,gem_id=151583,ilevel
 profileset."mag_shard"+=talents=2011031
 profileset."mag_shard"+=wrist=,id=138140,ilevel=265
 profileset."mag_shard"+=finger2=,id=132410,enchant_id=5428,gem_id=151583,ilevel=265
-profileset."mag_soul"+=talents=2011031
+profileset."mag_soul"+=talents=2013031
 profileset."mag_soul"+=wrist=,id=138140,ilevel=265
 profileset."mag_soul"+=finger2=,id=151642,enchant_id=5428,gem_id=151583,ilevel=265
 profileset."vashj_zannesu"+=talents=2011031
@@ -199,7 +198,7 @@ profileset."vashj_sephuz"+=finger2=,id=132452,enchant_id=5428,gem_id=151583,ilev
 profileset."vashj_shard"+=talents=2011031
 profileset."vashj_shard"+=hands=,id=132411,ilevel=265
 profileset."vashj_shard"+=finger2=,id=132410,enchant_id=5428,gem_id=151583,ilevel=265
-profileset."vashj_soul"+=talents=2011031
+profileset."vashj_soul"+=talents=2013031
 profileset."vashj_soul"+=hands=,id=132411,ilevel=265
 profileset."vashj_soul"+=finger2=,id=151642,enchant_id=5428,gem_id=151583,ilevel=265
 profileset."zannesu_kjbw"+=talents=2011031
@@ -211,7 +210,7 @@ profileset."zannesu_sephuz"+=finger2=,id=132452,enchant_id=5428,gem_id=151583,il
 profileset."zannesu_shard"+=talents=2011031
 profileset."zannesu_shard"+=waist=,id=133970,ilevel=265
 profileset."zannesu_shard"+=finger2=,id=132410,enchant_id=5428,gem_id=151583,ilevel=265
-profileset."zannesu_soul"+=talents=2011031
+profileset."zannesu_soul"+=talents=2013031
 profileset."zannesu_soul"+=waist=,id=133970,ilevel=265
 profileset."zannesu_soul"+=finger2=,id=151642,enchant_id=5428,gem_id=151583,ilevel=265
 profileset."kjbw_sephuz"+=talents=2011031
@@ -220,15 +219,15 @@ profileset."kjbw_sephuz"+=finger2=,id=132452,enchant_id=5428,gem_id=151583,ileve
 profileset."kjbw_shard"+=talents=2011031
 profileset."kjbw_shard"+=trinket1=,id=144259,ilevel=265
 profileset."kjbw_shard"+=finger2=,id=132410,enchant_id=5428,gem_id=151583,ilevel=265
-profileset."kjbw_soul"+=talents=2011031
+profileset."kjbw_soul"+=talents=2013031
 profileset."kjbw_soul"+=trinket1=,id=144259,ilevel=265
 profileset."kjbw_soul"+=finger2=,id=151642,enchant_id=5428,gem_id=151583,ilevel=265
 profileset."sephuz_shard"+=talents=2011031
 profileset."sephuz_shard"+=finger1=,id=132452,enchant_id=5428,gem_id=151583,ilevel=265
 profileset."sephuz_shard"+=finger2=,id=132410,enchant_id=5428,gem_id=151583,ilevel=265
-profileset."sephuz_soul"+=talents=2011031
+profileset."sephuz_soul"+=talents=2013031
 profileset."sephuz_soul"+=finger1=,id=132452,enchant_id=5428,gem_id=151583,ilevel=265
 profileset."sephuz_soul"+=finger2=,id=151642,enchant_id=5428,gem_id=151583,ilevel=265
-profileset."shard_soul"+=talents=2011031
+profileset."shard_soul"+=talents=2013031
 profileset."shard_soul"+=finger1=,id=132410,enchant_id=5428,gem_id=151583,ilevel=265
 profileset."shard_soul"+=finger2=,id=151642,enchant_id=5428,gem_id=151583,ilevel=265

@@ -91,18 +91,18 @@ actions.single+=/frostbolt
 actions.single+=/call_action_list,name=movement
 actions.single+=/ice_lance
 
-head=runebound_collar,id=152138,ilevel=240
+head=id=151810,ilevel=265
 neck=chain_of_the_unmaker,id=152283,ilevel=250,enchant_id=5439
 shoulders=runebound_mantle,id=152141,ilevel=240
 back=drape_of_the_arcane_tempest,id=147145,ilevel=210,enchant_id=5436
 chest=runebound_tunic,id=152140,ilevel=240
 wrists=manari_pyromancer_cuffs,id=151953,ilevel=240
-hands=gloves_of_the_arcane_tempest,id=147146,ilevel=210
+hands=runebound_gloves,id=152137,ilevel=240
 waist=cord_of_blossoming_petals,id=151952,ilevel=240
 legs=runebound_leggings,id=152139,ilevel=240
 feet=lady_dacidions_silk_slippers,id=151945,ilevel=240
 finger1=seal_of_the_portalmaster,id=152063,ilevel=240,enchant_id=5428
-finger2=zealous_tormentors_ring,id=152284,ilevel=240,enchant_id=5428
+finger2=id=132410,enchant_id=5428,gem_id=151583,ilevel=265
 trinket1=acrid_catalyst_injector,id=151955,ilevel=240
 trinket2=amanthuls_vision,id=154172,ilevel=280
 main_hand=ebonchill,id=128862,ilevel=251

@@ -1,6 +1,6 @@
 rem **Start of 01. Talents Sims**
 rem Arcane
-start "simc" /d "C:\Users\Glynny-PC\Desktop\Github\simc" /wait simc.exe "C:\Users\Glynny-PC\Desktop\Github\Simc-Files\02. Battle For Azeroth\PreRaid\Mage\03. Arcane\Simc Files\01. Talents\02. Single_Target_Talents.simc"
+start "simc" /d "C:\Users\Glynny-PC\Desktop\Github\simc" /wait simc.exe "C:\Users\Glynny-PC\Desktop\Github\Simc-Files\02. Battle For Azeroth\PreRaid\Mage\03. Arcane\Simc Files\01. Talents\01. Single_Target_Talents.simc"
 start "simc" /d "C:\Users\Glynny-PC\Desktop\Github\simc" /wait simc.exe "C:\Users\Glynny-PC\Desktop\Github\Simc-Files\02. Battle For Azeroth\PreRaid\Mage\03. Arcane\Simc Files\01. Talents\02. Two_Target_Talents.simc"
 start "simc" /d "C:\Users\Glynny-PC\Desktop\Github\simc" /wait simc.exe "C:\Users\Glynny-PC\Desktop\Github\Simc-Files\02. Battle For Azeroth\PreRaid\Mage\03. Arcane\Simc Files\01. Talents\03. Four_Target_Talents.simc"
 

@@ -1,8 +1,8 @@
 rem **Start of 01. Talents Sims**
 rem Fire
-start "simc" /d "C:\Users\Glynny-PC\Desktop\Github\simc" /wait simc.exe "C:\Users\Glynny-PC\Desktop\Github\Simc-Files\02. Battle For Azeroth\PreRaid\Mage\02. Fire\Simc Files\01. Talents\01. Single_Target_Racials.simc"
-start "simc" /d "C:\Users\Glynny-PC\Desktop\Github\simc" /wait simc.exe "C:\Users\Glynny-PC\Desktop\Github\Simc-Files\02. Battle For Azeroth\PreRaid\Mage\02. Fire\Simc Files\01. Talents\02. Two_Target_Racials.simc"
-start "simc" /d "C:\Users\Glynny-PC\Desktop\Github\simc" /wait simc.exe "C:\Users\Glynny-PC\Desktop\Github\Simc-Files\02. Battle For Azeroth\PreRaid\Mage\02. Fire\Simc Files\01. Talents\03. Four_Target_Racials.simc"
+start "simc" /d "C:\Users\Glynny-PC\Desktop\Github\simc" /wait simc.exe "C:\Users\Glynny-PC\Desktop\Github\Simc-Files\02. Battle For Azeroth\PreRaid\Mage\02. Fire\Simc Files\01. Talents\01. Single_Target_Talents.simc"
+start "simc" /d "C:\Users\Glynny-PC\Desktop\Github\simc" /wait simc.exe "C:\Users\Glynny-PC\Desktop\Github\Simc-Files\02. Battle For Azeroth\PreRaid\Mage\02. Fire\Simc Files\01. Talents\02. Two_Target_Talents.simc"
+start "simc" /d "C:\Users\Glynny-PC\Desktop\Github\simc" /wait simc.exe "C:\Users\Glynny-PC\Desktop\Github\Simc-Files\02. Battle For Azeroth\PreRaid\Mage\02. Fire\Simc Files\01. Talents\03. Four_Target_Talents.simc"
 
 
 rem **Start of 02. Racial Sims**
