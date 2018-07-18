@@ -14,7 +14,7 @@ level=110
 race=dwarf
 role=spell
 position=back
-talents=2011031
+talents=1013033
 
 # Default consumables
 potion=prolonged_power

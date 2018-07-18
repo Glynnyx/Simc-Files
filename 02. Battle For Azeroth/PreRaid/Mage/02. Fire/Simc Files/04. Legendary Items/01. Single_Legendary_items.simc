@@ -5,7 +5,7 @@ threads=4
 process_priority=low
 report_details=0
 chart_show_relative_difference=1
-html="C:\test.html"
+html="C:\Users\Glynny-PC\Desktop\Github\Simc-Files\02. Battle For Azeroth\PreRaid\Mage\02. Fire\HTML Files\04. Legendary Items\01. Single_Legendary_items.html"
 
 
 mage="T21_Mage_Fire"
@@ -14,9 +14,7 @@ level=110
 race=troll
 role=spell
 position=back
-talents=1022021
-artifact=54:0:0:0:0:748:1:749:4:750:4:751:4:752:4:753:4:754:4:755:4:756:4:757:4:758:1:759:1:760:1:761:1:762:1:763:1:1340:1:1372:1:1533:4:1534:1:1535:1:1536:75:1640:1
-crucible=1739:1780:751/1739:1780:1533/1739:1780:751
+talents=1031021
 
 # Default consumables
 potion=prolonged_power
@@ -51,9 +49,8 @@ actions+=/call_action_list,name=combustion_phase,if=cooldown.combustion.remains<
 actions+=/call_action_list,name=rop_phase,if=buff.rune_of_power.up&buff.combustion.down
 actions+=/call_action_list,name=standard_rotation
 
-actions.active_talents=blast_wave,if=(buff.combustion.down)|(buff.combustion.up&action.fire_blast.charges<1&action.phoenixs_flames.charges<1)
+actions.active_talents=blast_wave,if=(buff.combustion.down)|(buff.combustion.up&action.fire_blast.charges<1&action.phoenix_flames.charges<1)
 actions.active_talents+=/meteor,if=cooldown.combustion.remains>40|(cooldown.combustion.remains>target.time_to_die)|buff.rune_of_power.up|firestarter.active
-actions.active_talents+=/cinderstorm,if=cooldown.combustion.remains<cast_time&(buff.rune_of_power.up|!talent.rune_of_power.enabled)|cooldown.combustion.remains>10*spell_haste&!buff.combustion.up
 actions.active_talents+=/dragons_breath,if=equipped.132863|(talent.alexstraszas_fury.enabled&!buff.hot_streak.react)
 actions.active_talents+=/living_bomb,if=active_enemies>1&buff.combustion.down
 
@@ -70,9 +67,9 @@ actions.combustion_phase+=/flamestrike,if=(talent.flame_patch.enabled&active_ene
 actions.combustion_phase+=/pyroblast,if=buff.kaelthas_ultimate_ability.react&buff.combustion.remains>execute_time
 actions.combustion_phase+=/pyroblast,if=buff.hot_streak.react
 actions.combustion_phase+=/fire_blast,if=buff.heating_up.react
-actions.combustion_phase+=/phoenixs_flames
+actions.combustion_phase+=/phoenix_flames
 actions.combustion_phase+=/scorch,if=buff.combustion.remains>cast_time
-actions.combustion_phase+=/dragons_breath,if=!buff.hot_streak.react&action.fire_blast.charges<1&action.phoenixs_flames.charges<1
+actions.combustion_phase+=/dragons_breath,if=!buff.hot_streak.react&action.fire_blast.charges<1&action.phoenix_flames.charges<1
 actions.combustion_phase+=/scorch,if=target.health.pct<=30&equipped.132454
 
 actions.rop_phase=rune_of_power
@@ -81,9 +78,9 @@ actions.rop_phase+=/pyroblast,if=buff.hot_streak.react
 actions.rop_phase+=/call_action_list,name=active_talents
 actions.rop_phase+=/pyroblast,if=buff.kaelthas_ultimate_ability.react&execute_time<buff.kaelthas_ultimate_ability.remains&buff.rune_of_power.remains>cast_time
 actions.rop_phase+=/fire_blast,if=!prev_off_gcd.fire_blast&buff.heating_up.react&firestarter.active&charges_fractional>1.7
-actions.rop_phase+=/phoenixs_flames,if=!prev_gcd.1.phoenixs_flames&charges_fractional>2.7&firestarter.active
+actions.rop_phase+=/phoenix_flames,if=!prev_gcd.1.phoenix_flames&charges_fractional>2.7&firestarter.active
 actions.rop_phase+=/fire_blast,if=!prev_off_gcd.fire_blast&!firestarter.active
-actions.rop_phase+=/phoenixs_flames,if=!prev_gcd.1.phoenixs_flames
+actions.rop_phase+=/phoenix_flames,if=!prev_gcd.1.phoenix_flames
 actions.rop_phase+=/scorch,if=target.health.pct<=30&equipped.132454
 actions.rop_phase+=/dragons_breath,if=active_enemies>2
 actions.rop_phase+=/flamestrike,if=(talent.flame_patch.enabled&active_enemies>2)|active_enemies>5
@@ -92,16 +89,16 @@ actions.rop_phase+=/fireball
 actions.standard_rotation=flamestrike,if=((talent.flame_patch.enabled&active_enemies>1)|active_enemies>3)&buff.hot_streak.react
 actions.standard_rotation+=/pyroblast,if=buff.hot_streak.react&buff.hot_streak.remains<action.fireball.execute_time
 actions.standard_rotation+=/pyroblast,if=buff.hot_streak.react&firestarter.active&!talent.rune_of_power.enabled
-actions.standard_rotation+=/phoenixs_flames,if=charges_fractional>2.7&active_enemies>2
+actions.standard_rotation+=/phoenix_flames,if=charges_fractional>2.7&active_enemies>2
 actions.standard_rotation+=/pyroblast,if=buff.hot_streak.react&(!prev_gcd.1.pyroblast|action.pyroblast.in_flight)
 actions.standard_rotation+=/pyroblast,if=buff.hot_streak.react&target.health.pct<=30&equipped.132454
 actions.standard_rotation+=/pyroblast,if=buff.kaelthas_ultimate_ability.react&execute_time<buff.kaelthas_ultimate_ability.remains
 actions.standard_rotation+=/call_action_list,name=active_talents
 actions.standard_rotation+=/fire_blast,if=!talent.kindling.enabled&buff.heating_up.react&(!talent.rune_of_power.enabled|charges_fractional>1.4|cooldown.combustion.remains<40)&(3-charges_fractional)*(12*spell_haste)<cooldown.combustion.remains+3|target.time_to_die<4
 actions.standard_rotation+=/fire_blast,if=talent.kindling.enabled&buff.heating_up.react&(!talent.rune_of_power.enabled|charges_fractional>1.5|cooldown.combustion.remains<40)&(3-charges_fractional)*(18*spell_haste)<cooldown.combustion.remains+3|target.time_to_die<4
-actions.standard_rotation+=/phoenixs_flames,if=(buff.combustion.up|buff.rune_of_power.up|buff.incanters_flow.stack>3|talent.mirror_image.enabled)&artifact.phoenix_reborn.enabled&(4-charges_fractional)*13<cooldown.combustion.remains+5|target.time_to_die<10
-actions.standard_rotation+=/phoenixs_flames,if=(buff.combustion.up|buff.rune_of_power.up)&(4-charges_fractional)*30<cooldown.combustion.remains+5
-actions.standard_rotation+=/phoenixs_flames,if=charges_fractional>2.5&cooldown.combustion.remains>23
+actions.standard_rotation+=/phoenix_flames,if=(buff.combustion.up|buff.rune_of_power.up|buff.incanters_flow.stack>3|talent.mirror_image.enabled)&artifact.phoenix_reborn.enabled&(4-charges_fractional)*13<cooldown.combustion.remains+5|target.time_to_die<10
+actions.standard_rotation+=/phoenix_flames,if=(buff.combustion.up|buff.rune_of_power.up)&(4-charges_fractional)*30<cooldown.combustion.remains+5
+actions.standard_rotation+=/phoenix_flames,if=charges_fractional>2.5&cooldown.combustion.remains>23
 actions.standard_rotation+=/flamestrike,if=(talent.flame_patch.enabled&active_enemies>3)|active_enemies>5
 actions.standard_rotation+=/scorch,if=target.health.pct<=30&equipped.132454
 actions.standard_rotation+=/fireball
@@ -111,29 +108,264 @@ head=runebound_collar,id=152138,bonus_id=3612/1502
 neck=chain_of_the_unmaker,id=152283,bonus_id=3612/1502,enchant=mark_of_the_hidden_satyr
 shoulders=runebound_mantle,id=152141,bonus_id=3612/1502
 back=runebound_cape,id=152136,bonus_id=3612/1502,enchant=binding_of_intellect
-chest=gambeson_of_sargeras_corruption,id=152679,bonus_id=3612/1502
-wrists=marquee_bindings_of_the_sun_king,id=132406,bonus_id=3630
-hands=handwraps_of_inevitable_doom,id=152680,bonus_id=3612/1502
+chest=runebound_tunic,id=152140,ilevel=240
+wrists=blooddrenched_bindings,id=151954,bonus_id=3612/1502
+hands=runebound_gloves,id=152137,bonus_id=3563/1512
 waist=cord_of_blossoming_petals,id=151952,bonus_id=3612/1502
 legs=runebound_leggings,id=152139,bonus_id=3612/1502
 feet=whisperstep_runners,id=151939,bonus_id=3612/1502
 finger1=band_of_the_sargerite_smith,id=152064,bonus_id=3612/1502,enchant=binding_of_critical_strike
-finger2=shard_of_the_exodar,id=132410,bonus_id=3630,gem_id=151580,enchant=binding_of_critical_strike
+finger2=seal_of_the_portalmaster,id=152063,bonus_id=3612/1502,enchant=binding_of_versatility
 trinket1=acrid_catalyst_injector,id=151955,bonus_id=3612/1502
 trinket2=amanthuls_vision,id=154172,bonus_id=4213
-main_hand=felomelorn,id=128820,bonus_id=730,gem_id=155849/152026/155849,relic_id=3612:1512/3612:1502/3612:1512
+main_hand=felomelorn,id=128820,ilevel=251,azerite_level=256
 off_hand=heart_of_the_phoenix,id=133959
 
 # Gear Summary
-# gear_ilvl=973.88
-# gear_stamina=62244
-# gear_intellect=66680
-# gear_crit_rating=16141
-# gear_haste_rating=9023
-# gear_mastery_rating=8775
-# gear_versatility_rating=3875
-# gear_armor=2457
+# gear_ilvl=236.50
+# gear_stamina=1251
+# gear_intellect=899
+# gear_crit_rating=641
+# gear_haste_rating=344
+# gear_mastery_rating=364
+# gear_versatility_rating=172
+# gear_armor=253
 # set_bonus=tier21_2pc=1
 # set_bonus=tier21_4pc=1
 firestarter_time=20
 
+
+profileset."DB_Helm_Prydaz"+=talents=1031021
+profileset."DB_Helm_Prydaz"+=head=,id=132863,ilevel=265
+profileset."DB_Helm_Prydaz"+=neck=,id=132444,ilevel=265,gems=200crit,enchant=mark_of_the_trained_soldier
+profileset."DB_Helm_Inf_Core"+=talents=1031021
+profileset."DB_Helm_Inf_Core"+=head=,id=132863,ilevel=265
+profileset."DB_Helm_Inf_Core"+=shoulders=,id=151809,ilevel=265
+profileset."DB_Helm_Belovir"+=talents=1031021
+profileset."DB_Helm_Belovir"+=head=,id=132863,ilevel=265
+profileset."DB_Helm_Belovir"+=chest=,id=133977,ilevel=265
+profileset."DB_Helm_Sun_King"+=talents=1031021
+profileset."DB_Helm_Sun_King"+=head=,id=132863,ilevel=265
+profileset."DB_Helm_Sun_King"+=wrists=,id=132406,ilevel=265
+profileset."DB_Helm_Pyrotex"+=talents=1031021
+profileset."DB_Helm_Pyrotex"+=head=,id=132863,ilevel=265
+profileset."DB_Helm_Pyrotex"+=hands=,id=144355,ilevel=265
+profileset."DB_Helm_Koralon"+=talents=1031021
+profileset."DB_Helm_Koralon"+=head=,id=132863,ilevel=265
+profileset."DB_Helm_Koralon"+=waist=,id=132454,ilevel=265
+profileset."DB_Helm_Norg"+=talents=1031021
+profileset."DB_Helm_Norg"+=head=,id=132863,ilevel=265
+profileset."DB_Helm_Norg"+=feet=,id=132455,ilevel=265
+profileset."DB_Helm_Archmage"+=talents=1033021
+profileset."DB_Helm_Archmage"+=head=,id=132863,ilevel=265
+profileset."DB_Helm_Archmage"+=finger2=,id=151642,ilevel=265,gems=200crit,enchant=200crit
+profileset."DB_Helm_Shard"+=talents=1031021
+profileset."DB_Helm_Shard"+=head=,id=132863,ilevel=265
+profileset."DB_Helm_Shard"+=finger2=,id=132410,ilevel=265,gems=200crit,enchant=200crit
+profileset."DB_Helm_Sephuz"+=talents=1031021
+profileset."DB_Helm_Sephuz"+=head=,id=132863,ilevel=265
+profileset."DB_Helm_Sephuz"+=finger2=,id=132452,ilevel=265,gems=200crit,enchant=200crit
+profileset."DB_Helm_KJBW"+=talents=1031021
+profileset."DB_Helm_KJBW"+=head=,id=132863,ilevel=265
+profileset."DB_Helm_KJBW"+=trinket1=,id=144259,ilevel=265
+profileset."DB_Helm_Insignia"+=talents=1031021
+profileset."DB_Helm_Insignia"+=head=,id=132863,ilevel=265
+profileset."DB_Helm_Insignia"+=finger2=insignia_of_the_grand_army,id=152626,ilevel=265
+profileset."Prydaz_Inf_Core"+=talents=1031021
+profileset."Prydaz_Inf_Core"+=neck=,id=132444,ilevel=265,gems=200crit,enchant=mark_of_the_trained_soldier
+profileset."Prydaz_Inf_Core"+=shoulders=,id=151809,ilevel=265
+profileset."Prydaz_Belovir"+=talents=1031021
+profileset."Prydaz_Belovir"+=neck=,id=132444,ilevel=265,gems=200crit,enchant=mark_of_the_trained_soldier
+profileset."Prydaz_Belovir"+=chest=,id=133977,ilevel=265
+profileset."Prydaz_Sun_King"+=talents=1031021
+profileset."Prydaz_Sun_King"+=neck=,id=132444,ilevel=265,gems=200crit,enchant=mark_of_the_trained_soldier
+profileset."Prydaz_Sun_King"+=wrists=,id=132406,ilevel=265
+profileset."Prydaz_Pyrotex"+=talents=1031021
+profileset."Prydaz_Pyrotex"+=neck=,id=132444,ilevel=265,gems=200crit,enchant=mark_of_the_trained_soldier
+profileset."Prydaz_Pyrotex"+=hands=,id=144355,ilevel=265
+profileset."Prydaz_Koralon"+=talents=1031021
+profileset."Prydaz_Koralon"+=neck=,id=132444,ilevel=265,gems=200crit,enchant=mark_of_the_trained_soldier
+profileset."Prydaz_Koralon"+=waist=,id=132454,ilevel=265
+profileset."Prydaz_Norg"+=talents=1031021
+profileset."Prydaz_Norg"+=neck=,id=132444,ilevel=265,gems=200crit,enchant=mark_of_the_trained_soldier
+profileset."Prydaz_Norg"+=feet=,id=132455,ilevel=265
+profileset."Prydaz_Archmage"+=talents=1033021
+profileset."Prydaz_Archmage"+=neck=,id=132444,ilevel=265,gems=200crit,enchant=mark_of_the_trained_soldier
+profileset."Prydaz_Archmage"+=finger2=,id=151642,ilevel=265,gems=200crit,enchant=200crit
+profileset."Prydaz_Shard"+=talents=1031021
+profileset."Prydaz_Shard"+=neck=,id=132444,ilevel=265,gems=200crit,enchant=mark_of_the_trained_soldier
+profileset."Prydaz_Shard"+=finger2=,id=132410,ilevel=265,gems=200crit,enchant=200crit
+profileset."Prydaz_Sephuz"+=talents=1031021
+profileset."Prydaz_Sephuz"+=neck=,id=132444,ilevel=265,gems=200crit,enchant=mark_of_the_trained_soldier
+profileset."Prydaz_Sephuz"+=finger2=,id=132452,ilevel=265,gems=200crit,enchant=200crit
+profileset."Prydaz_KJBW"+=talents=1031021
+profileset."Prydaz_KJBW"+=neck=,id=132444,ilevel=265,gems=200crit,enchant=mark_of_the_trained_soldier
+profileset."Prydaz_KJBW"+=trinket1=,id=144259,ilevel=265
+profileset."Prydaz_Insignia"+=talents=1031021
+profileset."Prydaz_Insignia"+=neck=,id=132444,ilevel=265,gems=200crit,enchant=mark_of_the_trained_soldier
+profileset."Prydaz_Insignia"+=finger2=insignia_of_the_grand_army,id=152626,ilevel=265
+profileset."Inf_Core_Belovir"+=talents=1031021
+profileset."Inf_Core_Belovir"+=shoulders=,id=151809,ilevel=265
+profileset."Inf_Core_Belovir"+=chest=,id=133977,ilevel=265
+profileset."Inf_Core_Sun_King"+=talents=1031021
+profileset."Inf_Core_Sun_King"+=shoulders=,id=151809,ilevel=265
+profileset."Inf_Core_Sun_King"+=wrists=,id=132406,ilevel=265
+profileset."Inf_Core_Pyrotex"+=talents=1031021
+profileset."Inf_Core_Pyrotex"+=shoulders=,id=151809,ilevel=265
+profileset."Inf_Core_Pyrotex"+=hands=,id=144355,ilevel=265
+profileset."Inf_Core_Koralon"+=talents=1031021
+profileset."Inf_Core_Koralon"+=shoulders=,id=151809,ilevel=265
+profileset."Inf_Core_Koralon"+=waist=,id=132454,ilevel=265
+profileset."Inf_Core_Norg"+=talents=1031021
+profileset."Inf_Core_Norg"+=shoulders=,id=151809,ilevel=265
+profileset."Inf_Core_Norg"+=feet=,id=132455,ilevel=265
+profileset."Inf_Core_Archmage"+=talents=1033021
+profileset."Inf_Core_Archmage"+=shoulders=,id=151809,ilevel=265
+profileset."Inf_Core_Archmage"+=finger2=,id=151642,ilevel=265,gems=200crit,enchant=200crit
+profileset."Inf_Core_Shard"+=talents=1031021
+profileset."Inf_Core_Shard"+=shoulders=,id=151809,ilevel=265
+profileset."Inf_Core_Shard"+=finger2=,id=132410,ilevel=265,gems=200crit,enchant=200crit
+profileset."Inf_Core_Sephuz"+=talents=1031021
+profileset."Inf_Core_Sephuz"+=shoulders=,id=151809,ilevel=265
+profileset."Inf_Core_Sephuz"+=finger2=,id=132452,ilevel=265,gems=200crit,enchant=200crit
+profileset."Inf_Core_KJBW"+=talents=1031021
+profileset."Inf_Core_KJBW"+=shoulders=,id=151809,ilevel=265
+profileset."Inf_Core_KJBW"+=trinket1=,id=144259,ilevel=265
+profileset."Inf_Core_Insignia"+=talents=1031021
+profileset."Inf_Core_Insignia"+=shoulders=,id=151809,ilevel=265
+profileset."Inf_Core_Insignia"+=finger2=insignia_of_the_grand_army,id=152626,ilevel=265
+profileset."Belovir_Sun_King"+=talents=1031021
+profileset."Belovir_Sun_King"+=chest=,id=133977,ilevel=265
+profileset."Belovir_Sun_King"+=wrists=,id=132406,ilevel=265
+profileset."Belovir_Pyrotex"+=talents=1031021
+profileset."Belovir_Pyrotex"+=chest=,id=133977,ilevel=265
+profileset."Belovir_Pyrotex"+=hands=,id=144355,ilevel=265
+profileset."Belovir_Koralon"+=talents=1031021
+profileset."Belovir_Koralon"+=chest=,id=133977,ilevel=265
+profileset."Belovir_Koralon"+=waist=,id=132454,ilevel=265
+profileset."Belovir_Norg"+=talents=1031021
+profileset."Belovir_Norg"+=chest=,id=133977,ilevel=265
+profileset."Belovir_Norg"+=feet=,id=132455,ilevel=265
+profileset."Belovir_Archmage"+=talents=1033021
+profileset."Belovir_Archmage"+=chest=,id=133977,ilevel=265
+profileset."Belovir_Archmage"+=finger2=,id=151642,ilevel=265,gems=200crit,enchant=200crit
+profileset."Belovir_Shard"+=talents=1031021
+profileset."Belovir_Shard"+=chest=,id=133977,ilevel=265
+profileset."Belovir_Shard"+=finger2=,id=132410,ilevel=265,gems=200crit,enchant=200crit
+profileset."Belovir_Sephuz"+=talents=1031021
+profileset."Belovir_Sephuz"+=chest=,id=133977,ilevel=265
+profileset."Belovir_Sephuz"+=finger2=,id=132452,ilevel=265,gems=200crit,enchant=200crit
+profileset."Belovir_KJBW"+=talents=1031021
+profileset."Belovir_KJBW"+=chest=,id=133977,ilevel=265
+profileset."Belovir_KJBW"+=trinket1=,id=144259,ilevel=265
+profileset."Belovir_Insignia"+=talents=1031021
+profileset."Belovir_Insignia"+=chest=,id=133977,ilevel=265
+profileset."Belovir_Insignia"+=finger2=insignia_of_the_grand_army,id=152626,ilevel=265
+profileset."Sun_King_Pyrotex"+=talents=1031021
+profileset."Sun_King_Pyrotex"+=wrists=,id=132406,ilevel=265
+profileset."Sun_King_Pyrotex"+=hands=,id=144355,ilevel=265
+profileset."Sun_King_Koralon"+=talents=1031021
+profileset."Sun_King_Koralon"+=wrists=,id=132406,ilevel=265
+profileset."Sun_King_Koralon"+=waist=,id=132454,ilevel=265
+profileset."Sun_King_Norg"+=talents=1031021
+profileset."Sun_King_Norg"+=wrists=,id=132406,ilevel=265
+profileset."Sun_King_Norg"+=feet=,id=132455,ilevel=265
+profileset."Sun_King_Archmage"+=talents=1033021
+profileset."Sun_King_Archmage"+=wrists=,id=132406,ilevel=265
+profileset."Sun_King_Archmage"+=finger2=,id=151642,ilevel=265,gems=200crit,enchant=200crit
+profileset."Sun_King_Shard"+=talents=1031021
+profileset."Sun_King_Shard"+=wrists=,id=132406,ilevel=265
+profileset."Sun_King_Shard"+=finger2=,id=132410,ilevel=265,gems=200crit,enchant=200crit
+profileset."Sun_King_Sephuz"+=talents=1031021
+profileset."Sun_King_Sephuz"+=wrists=,id=132406,ilevel=265
+profileset."Sun_King_Sephuz"+=finger2=,id=132452,ilevel=265,gems=200crit,enchant=200crit
+profileset."Sun_King_KJBW"+=talents=1031021
+profileset."Sun_King_KJBW"+=wrists=,id=132406,ilevel=265
+profileset."Sun_King_KJBW"+=trinket1=,id=144259,ilevel=265
+profileset."Sun_King_Insignia"+=talents=1031021
+profileset."Sun_King_Insignia"+=wrists=,id=132406,ilevel=265
+profileset."Sun_King_Insignia"+=finger2=insignia_of_the_grand_army,id=152626,ilevel=265
+profileset."Pyrotex_Koralon"+=talents=1031021
+profileset."Pyrotex_Koralon"+=hands=,id=144355,ilevel=265
+profileset."Pyrotex_Koralon"+=waist=,id=132454,ilevel=265
+profileset."Pyrotex_Norg"+=talents=1031021
+profileset."Pyrotex_Norg"+=hands=,id=144355,ilevel=265
+profileset."Pyrotex_Norg"+=feet=,id=132455,ilevel=265
+profileset."Pyrotex_Archmage"+=talents=1033021
+profileset."Pyrotex_Archmage"+=hands=,id=144355,ilevel=265
+profileset."Pyrotex_Archmage"+=finger2=,id=151642,ilevel=265,gems=200crit,enchant=200crit
+profileset."Pyrotex_Shard"+=talents=1031021
+profileset."Pyrotex_Shard"+=hands=,id=144355,ilevel=265
+profileset."Pyrotex_Shard"+=finger2=,id=132410,ilevel=265,gems=200crit,enchant=200crit
+profileset."Pyrotex_Sephuz"+=talents=1031021
+profileset."Pyrotex_Sephuz"+=hands=,id=144355,ilevel=265
+profileset."Pyrotex_Sephuz"+=finger2=,id=132452,ilevel=265,gems=200crit,enchant=200crit
+profileset."Pyrotex_KJBW"+=talents=1031021
+profileset."Pyrotex_KJBW"+=hands=,id=144355,ilevel=265
+profileset."Pyrotex_KJBW"+=trinket1=,id=144259,ilevel=265
+profileset."Pyrotex_Insignia"+=talents=1031021
+profileset."Pyrotex_Insignia"+=hands=,id=144355,ilevel=265
+profileset."Pyrotex_Insignia"+=finger2=insignia_of_the_grand_army,id=152626,ilevel=265
+profileset."Koralon_Norg"+=talents=1031021
+profileset."Koralon_Norg"+=waist=,id=132454,ilevel=265
+profileset."Koralon_Norg"+=feet=,id=132455,ilevel=265
+profileset."Koralon_Archmage"+=talents=1033021
+profileset."Koralon_Archmage"+=waist=,id=132454,ilevel=265
+profileset."Koralon_Archmage"+=finger2=,id=151642,ilevel=265,gems=200crit,enchant=200crit
+profileset."Koralon_Shard"+=talents=1031021
+profileset."Koralon_Shard"+=waist=,id=132454,ilevel=265
+profileset."Koralon_Shard"+=finger2=,id=132410,ilevel=265,gems=200crit,enchant=200crit
+profileset."Koralon_Sephuz"+=talents=1031021
+profileset."Koralon_Sephuz"+=waist=,id=132454,ilevel=265
+profileset."Koralon_Sephuz"+=finger2=,id=132452,ilevel=265,gems=200crit,enchant=200crit
+profileset."Koralon_KJBW"+=talents=1031021
+profileset."Koralon_KJBW"+=waist=,id=132454,ilevel=265
+profileset."Koralon_KJBW"+=trinket1=,id=144259,ilevel=265
+profileset."Koralon_Insignia"+=talents=1031021
+profileset."Koralon_Insignia"+=waist=,id=132454,ilevel=265
+profileset."Koralon_Insignia"+=finger2=insignia_of_the_grand_army,id=152626,ilevel=265
+profileset."Norg_Archmage"+=talents=1033021
+profileset."Norg_Archmage"+=feet=,id=132455,ilevel=265
+profileset."Norg_Archmage"+=finger2=,id=151642,ilevel=265,gems=200crit,enchant=200crit
+profileset."Norg_Shard"+=talents=1031021
+profileset."Norg_Shard"+=feet=,id=132455,ilevel=265
+profileset."Norg_Shard"+=finger2=,id=132410,ilevel=265,gems=200crit,enchant=200crit
+profileset."Norg_Sephuz"+=talents=1031021
+profileset."Norg_Sephuz"+=feet=,id=132455,ilevel=265
+profileset."Norg_Sephuz"+=finger2=,id=132452,ilevel=265,gems=200crit,enchant=200crit
+profileset."Norg_KJBW"+=talents=1031021
+profileset."Norg_KJBW"+=feet=,id=132455,ilevel=265
+profileset."Norg_KJBW"+=trinket1=,id=144259,ilevel=265
+profileset."Norg_Insignia"+=talents=1031021
+profileset."Norg_Insignia"+=feet=,id=132455,ilevel=265
+profileset."Norg_Insignia"+=finger2=insignia_of_the_grand_army,id=152626,ilevel=265
+profileset."Archmage_Shard"+=talents=1033021
+profileset."Archmage_Shard"+=finger1=,id=151642,ilevel=265,gems=200crit,enchant=200crit
+profileset."Archmage_Shard"+=finger2=,id=132410,ilevel=265,gems=200crit,enchant=200crit
+profileset."Archmage_Sephuz"+=talents=1033021
+profileset."Archmage_Sephuz"+=finger1=,id=151642,ilevel=265,gems=200crit,enchant=200crit
+profileset."Archmage_Sephuz"+=finger2=,id=132452,ilevel=265,gems=200crit,enchant=200crit
+profileset."Archmage_KJBW"+=talents=1033021
+profileset."Archmage_KJBW"+=finger1=,id=151642,ilevel=265,gems=200crit,enchant=200crit
+profileset."Archmage_KJBW"+=trinket1=,id=144259,ilevel=265
+profileset."Archmage_Insignia"+=talents=1033021
+profileset."Archmage_Insignia"+=finger1=,id=151642,ilevel=265,gems=200crit,enchant=200crit
+profileset."Archmage_Insignia"+=finger2=insignia_of_the_grand_army,id=152626,ilevel=265
+profileset."Shard_Sephuz"+=talents=1031021
+profileset."Shard_Sephuz"+=finger1=,id=132410,ilevel=265,gems=200crit,enchant=200crit
+profileset."Shard_Sephuz"+=finger2=,id=132452,ilevel=265,gems=200crit,enchant=200crit
+profileset."Shard_KJBW"+=talents=1031021
+profileset."Shard_KJBW"+=finger1=,id=132410,ilevel=265,gems=200crit,enchant=200crit
+profileset."Shard_KJBW"+=trinket1=,id=144259,ilevel=265
+profileset."Shard_Insignia"+=talents=1031021
+profileset."Shard_Insignia"+=finger1=,id=132410,ilevel=265,gems=200crit,enchant=200crit
+profileset."Shard_Insignia"+=finger2=insignia_of_the_grand_army,id=152626,ilevel=265
+profileset."Sephuz_KJBW"+=talents=1031021
+profileset."Sephuz_KJBW"+=finger1=,id=132452,ilevel=265,gems=200crit,enchant=200crit
+profileset."Sephuz_KJBW"+=trinket1=,id=144259,ilevel=265
+profileset."Sephuz_Insignia"+=talents=1031021
+profileset."Sephuz_Insignia"+=finger1=,id=132452,ilevel=265,gems=200crit,enchant=200crit
+profileset."Sephuz_Insignia"+=finger2=insignia_of_the_grand_army,id=152626,ilevel=265
+profileset."KJBW_Insignia"+=talents=1031021
+profileset."KJBW_Insignia"+=trinket1=,id=144259,ilevel=265
+profileset."KJBW_Insignia"+=finger2=insignia_of_the_grand_army,id=152626,ilevel=265
