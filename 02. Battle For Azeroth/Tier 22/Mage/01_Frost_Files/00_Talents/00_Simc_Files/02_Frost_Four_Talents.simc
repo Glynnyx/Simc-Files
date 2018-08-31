@@ -1,0 +1,387 @@
+max_time=360
+vary_combat_length=0.2
+iterations=5000
+threads=4
+process_priority=low
+report_details=0
+chart_show_relative_difference=1
+html="C:\Users\glynnm\Desktop\git\Simc-Files\02. Battle For Azeroth\Tier 22\Mage\01_Frost_Files\00_Talents\01_HTML_Files\03_Frost_Four_Talents.html"
+desired_targets=4
+
+mage="T22_Mage_Frost"
+source=default
+spec=frost
+level=120
+race=pandaren
+role=spell
+position=ranged_back
+talents=0000000
+
+# Default consumables
+potion=rising_death
+flask=endless_fathoms
+food=bountiful_captains_feast
+augmentation=battle_scarred
+
+# This default action priority list is automatically created based on your character.
+# It is a attempt to provide you with a action list that is both simple and practicable,
+# while resulting in a meaningful and good simulation. It may not result in the absolutely highest possible dps.
+# Feel free to edit, adapt and improve it to your own needs.
+# SimulationCraft is always looking for updates and improvements to the default action lists.
+
+# Executed before combat begins. Accepts non-harmful actions only.
+actions.precombat=flask
+actions.precombat+=/food
+actions.precombat+=/augmentation
+actions.precombat+=/arcane_intellect
+actions.precombat+=/water_elemental
+actions.precombat+=/snapshot_stats
+actions.precombat+=/mirror_image
+actions.precombat+=/potion
+actions.precombat+=/frostbolt
+
+# Executed every time the actor is available.
+actions=counterspell
+# If the mage has FoF after casting instant Flurry, we can delay the Ice Lance and use other high priority action, if available.
+actions+=/ice_lance,if=prev_gcd.1.flurry&brain_freeze_active&!buff.fingers_of_frost.react
+actions+=/call_action_list,name=cooldowns
+# The target threshold isn't exact. Between 3-5 targets, the differences between the ST and AoE action lists are rather small. However, Freezing Rain prefers using AoE action list sooner as it benefits greatly from the high priority Blizzard action.
+actions+=/call_action_list,name=aoe,if=active_enemies>3&talent.freezing_rain.enabled|active_enemies>4
+actions+=/call_action_list,name=single
+
+# With Freezing Rain, it's better to prioritize using Frozen Orb when both FO and Blizzard are off cooldown. Without Freezing Rain, the converse is true although the difference is miniscule until very high target counts.
+actions.aoe=frozen_orb
+actions.aoe+=/blizzard
+actions.aoe+=/comet_storm
+actions.aoe+=/ice_nova
+# Simplified Flurry conditions from the ST action list. Since the mage is generating far less Brain Freeze charges, the exact condition here isn't all that important.
+actions.aoe+=/flurry,if=prev_gcd.1.ebonbolt|buff.brain_freeze.react&(prev_gcd.1.frostbolt&(buff.icicles.stack<4|!talent.glacial_spike.enabled)|prev_gcd.1.glacial_spike)
+actions.aoe+=/ice_lance,if=buff.fingers_of_frost.react
+# The mage will generally be generating a lot of FoF charges when using the AoE action list. Trying to delay Ray of Frost until there are no FoF charges and no active Frozen Orbs would lead to it not being used at all.
+actions.aoe+=/ray_of_frost
+actions.aoe+=/ebonbolt
+actions.aoe+=/glacial_spike
+# Using Cone of Cold is mostly DPS neutral with the AoE target thresholds. It only becomes decent gain with roughly 7 or more targets.
+actions.aoe+=/cone_of_cold
+actions.aoe+=/frostbolt
+actions.aoe+=/call_action_list,name=movement
+actions.aoe+=/ice_lance
+
+actions.cooldowns=time_warp
+actions.cooldowns+=/icy_veins
+actions.cooldowns+=/mirror_image
+# Rune of Power is always used with Frozen Orb. Any leftover charges at the end of the fight should be used, ideally if the boss doesn't die in the middle of the Rune buff.
+actions.cooldowns+=/rune_of_power,if=prev_gcd.1.frozen_orb|time_to_die>10+cast_time&time_to_die<20
+# On single target fights, the cooldown of Rune of Power is lower than the cooldown of Frozen Orb, this gives extra Rune of Power charges that should be used with active talents, if possible.
+actions.cooldowns+=/call_action_list,name=talent_rop,if=talent.rune_of_power.enabled&active_enemies=1&cooldown.rune_of_power.full_recharge_time<cooldown.frozen_orb.remains
+actions.cooldowns+=/potion,if=prev_gcd.1.icy_veins|target.time_to_die<70
+actions.cooldowns+=/use_items
+actions.cooldowns+=/blood_fury
+actions.cooldowns+=/berserking
+actions.cooldowns+=/lights_judgment
+actions.cooldowns+=/fireblood
+actions.cooldowns+=/ancestral_call
+
+actions.movement=blink,if=movement.distance>10
+actions.movement+=/ice_floes,if=buff.ice_floes.down
+
+# In some situations, you can shatter Ice Nova even after already casting Flurry and Ice Lance. Otherwise this action is used when the mage has FoF after casting Flurry, see above.
+actions.single=ice_nova,if=cooldown.ice_nova.ready&debuff.winters_chill.up
+# Without GS, the mage just tries to shatter as many Frostbolts and Ebonbolts as possible. Forcing shatter on Frostbolt is still a small gain, so is not caring about FoF. Ice Lance is too weak to warrant delaying Brain Freeze Flurry.
+actions.single+=/flurry,if=!talent.glacial_spike.enabled&(prev_gcd.1.ebonbolt|buff.brain_freeze.react&prev_gcd.1.frostbolt)
+# With GS, the mage only shatters Frostbolt that would put them at 1-3 Icicle stacks, Ebonbolt if it would waste Brain Freeze charge (i.e. when the mage starts casting Ebonbolt with Brain Freeze active) and of course Glacial Spike. Difference between shattering Frostbolt with 1-3 Icicles and 1-4 Icicles is small, but 1-3 tends to be better in more situations (the higher GS damage is, the more it leans towards 1-3).
+actions.single+=/flurry,if=talent.glacial_spike.enabled&buff.brain_freeze.react&(prev_gcd.1.frostbolt&buff.icicles.stack<4|prev_gcd.1.glacial_spike|prev_gcd.1.ebonbolt)
+actions.single+=/frozen_orb
+# With Freezing Rain and at least 2 targets, Blizzard needs to be used with higher priority to make sure you can fit both instant Blizzards into a single Freezing Rain. Starting with three targets, Blizzard leaves the low priority filler role and is used on cooldown (and just making sure not to waste Brain Freeze charges) with or without Freezing Rain.
+actions.single+=/blizzard,if=active_enemies>2|active_enemies>1&cast_time=0&buff.fingers_of_frost.react<2
+# Trying to pool charges of FoF for anything isn't worth it. Use them as they come.
+actions.single+=/ice_lance,if=buff.fingers_of_frost.react
+actions.single+=/comet_storm
+# Without GS, Ebonbolt is used on cooldown. With GS, Ebonbolt is only used to fill in the blank spots when fishing for a Brain Freeze proc, i.e. the mage reaches 5 Icicles but still doesn't have a Brain Freeze proc. This is DPS neutral with low mastery and slight gain otherwise.
+actions.single+=/ebonbolt,if=!talent.glacial_spike.enabled|buff.icicles.stack=5&!buff.brain_freeze.react
+# Ray of Frost is used after all Fingers of Frost charges have been used and there isn't active Frozen Orb that could generate more. This is only a small gain against multiple targets, as Ray of Frost isn't too impactful.
+actions.single+=/ray_of_frost,if=!action.frozen_orb.in_flight&ground_aoe.frozen_orb.remains=0
+# Blizzard is used as low priority filler against 2 targets. When using Freezing Rain, it's a medium gain to use the instant Blizzard even against a single target, especially with low mastery.
+actions.single+=/blizzard,if=cast_time=0|active_enemies>1
+# Glacial Spike is used when there's a Brain Freeze proc active (i.e. only when it can be shattered). This is a small to medium gain in most situations. Low mastery leans towards using it when available. When using Splitting Ice and having another target nearby, it's slightly better to use GS when available, as the second target doesn't benefit from shattering the main target.
+actions.single+=/glacial_spike,if=buff.brain_freeze.react|prev_gcd.1.ebonbolt|active_enemies>1&talent.splitting_ice.enabled
+actions.single+=/ice_nova
+actions.single+=/flurry,if=azerite.winters_reach.enabled&!buff.brain_freeze.react&buff.winters_reach.react
+actions.single+=/frostbolt
+actions.single+=/call_action_list,name=movement
+actions.single+=/ice_lance
+
+# With Glacial Spike, Rune of Power should be used right before the Glacial Spike combo (i.e. with 5 Icicles and a Brain Freeze). When Ebonbolt is off cooldown, Rune of Power can also be used just with 5 Icicles.
+actions.talent_rop=rune_of_power,if=talent.glacial_spike.enabled&buff.icicles.stack=5&(buff.brain_freeze.react|talent.ebonbolt.enabled&cooldown.ebonbolt.remains<cast_time)
+# Without Glacial Spike, Rune of Power should be used before any bigger cooldown (Ebonbolt, Comet Storm, Ray of Frost) or when Rune of Power is about to reach 2 charges.
+actions.talent_rop+=/rune_of_power,if=!talent.glacial_spike.enabled&(talent.ebonbolt.enabled&cooldown.ebonbolt.remains<cast_time|talent.comet_storm.enabled&cooldown.comet_storm.remains<cast_time|talent.ray_of_frost.enabled&cooldown.ray_of_frost.remains<cast_time|charges_fractional>1.9)
+
+head=grasping_crown_of_the_deep,id=159252,bonus_id=1557/4819/4775/4786,azerite_powers=9/479/22/14/13
+neck=heart_of_azeroth,id=158075,bonus_id=4929/4930/4936/1536,azerite_level=
+shoulders=amice_of_corrupting_horror,id=160726,bonus_id=4824/1507/4775,azerite_powers=8/485/462/85/13
+back=cloak_of_rippling_whispers,id=160642,bonus_id=4800/1507
+chest=robes_of_the_reborn_serpent,id=159257,bonus_id=1557/4819/4775/4786,azerite_powers=9/482/462/85/13
+wrists=voidlashed_wristband,id=160617,bonus_id=4800/1507
+hands=mutagenic_protofluid_handwraps,id=160715,bonus_id=4800/1507
+waist=cord_of_septic_envelopment,id=160727,bonus_id=4800/1507
+legs=leggings_of_lingering_infestation,id=160615,bonus_id=4800/1507
+feet=volatile_walkers,id=160714,bonus_id=4800/1507
+finger1=rotscour_ring,id=160645,bonus_id=4800/1507,enchant=pact_of_critical_strike
+finger2=ring_of_the_infinite_void,id=160647,bonus_id=4800/1507,enchant=pact_of_critical_strike
+trinket1=rotcrusted_voodoo_doll,id=159624,bonus_id=1542/4779
+trinket2=vigilants_bloodshaper,id=160651,bonus_id=4800/1507
+main_hand=heptavium_staff_of_torturous_knowledge,id=160690,bonus_id=4800/1507,enchant=torrent_of_elements
+
+# Gear Summary
+# gear_ilvl=385.27
+# gear_stamina=7207
+# gear_intellect=5479
+# gear_crit_rating=1301
+# gear_haste_rating=700
+# gear_mastery_rating=819
+# gear_versatility_rating=183
+# gear_armor=1159
+
+profileset."BC_IF_FT_FR_TV"+=talents=1111111
+profileset."BC_IF_FT_FR_RoF"+=talents=1111112
+profileset."BC_IF_FT_FR_GS"+=talents=1111113
+profileset."BC_IF_FT_SI_TV"+=talents=1111121
+profileset."BC_IF_FT_SI_RoF"+=talents=1111122
+profileset."BC_IF_FT_SI_GS"+=talents=1111123
+profileset."BC_IF_FT_CS_TV"+=talents=1111131
+profileset."BC_IF_FT_CS_RoF"+=talents=1111132
+profileset."BC_IF_FT_CS_GS"+=talents=1111133
+profileset."BC_IF_CR_FR_TV"+=talents=1112111
+profileset."BC_IF_CR_FR_RoF"+=talents=1112112
+profileset."BC_IF_CR_FR_GS"+=talents=1112113
+profileset."BC_IF_CR_SI_TV"+=talents=1112121
+profileset."BC_IF_CR_SI_RoF"+=talents=1112122
+profileset."BC_IF_CR_SI_GS"+=talents=1112123
+profileset."BC_IF_CR_CS_TV"+=talents=1112131
+profileset."BC_IF_CR_CS_RoF"+=talents=1112132
+profileset."BC_IF_CR_CS_GS"+=talents=1112133
+profileset."BC_IF_EB_FR_TV"+=talents=1113111
+profileset."BC_IF_EB_FR_RoF"+=talents=1113112
+profileset."BC_IF_EB_FR_GS"+=talents=1113113
+profileset."BC_IF_EB_SI_TV"+=talents=1113121
+profileset."BC_IF_EB_SI_RoF"+=talents=1113122
+profileset."BC_IF_EB_SI_GS"+=talents=1113123
+profileset."BC_IF_EB_CS_TV"+=talents=1113131
+profileset."BC_IF_EB_CS_RoF"+=talents=1113132
+profileset."BC_IF_EB_CS_GS"+=talents=1113133
+profileset."BC_MI_FT_FR_TV"+=talents=1121111
+profileset."BC_MI_FT_FR_RoF"+=talents=1121112
+profileset."BC_MI_FT_FR_GS"+=talents=1121113
+profileset."BC_MI_FT_SI_TV"+=talents=1121121
+profileset."BC_MI_FT_SI_RoF"+=talents=1121122
+profileset."BC_MI_FT_SI_GS"+=talents=1121123
+profileset."BC_MI_FT_CS_TV"+=talents=1121131
+profileset."BC_MI_FT_CS_RoF"+=talents=1121132
+profileset."BC_MI_FT_CS_GS"+=talents=1121133
+profileset."BC_MI_CR_FR_TV"+=talents=1122111
+profileset."BC_MI_CR_FR_RoF"+=talents=1122112
+profileset."BC_MI_CR_FR_GS"+=talents=1122113
+profileset."BC_MI_CR_SI_TV"+=talents=1122121
+profileset."BC_MI_CR_SI_RoF"+=talents=1122122
+profileset."BC_MI_CR_SI_GS"+=talents=1122123
+profileset."BC_MI_CR_CS_TV"+=talents=1122131
+profileset."BC_MI_CR_CS_RoF"+=talents=1122132
+profileset."BC_MI_CR_CS_GS"+=talents=1122133
+profileset."BC_MI_EB_FR_TV"+=talents=1123111
+profileset."BC_MI_EB_FR_RoF"+=talents=1123112
+profileset."BC_MI_EB_FR_GS"+=talents=1123113
+profileset."BC_MI_EB_SI_TV"+=talents=1123121
+profileset."BC_MI_EB_SI_RoF"+=talents=1123122
+profileset."BC_MI_EB_SI_GS"+=talents=1123123
+profileset."BC_MI_EB_CS_TV"+=talents=1123131
+profileset."BC_MI_EB_CS_RoF"+=talents=1123132
+profileset."BC_MI_EB_CS_GS"+=talents=1123133
+profileset."BC_ROP_FT_FR_TV"+=talents=1131111
+profileset."BC_ROP_FT_FR_RoF"+=talents=1131112
+profileset."BC_ROP_FT_FR_GS"+=talents=1131113
+profileset."BC_ROP_FT_SI_TV"+=talents=1131121
+profileset."BC_ROP_FT_SI_RoF"+=talents=1131122
+profileset."BC_ROP_FT_SI_GS"+=talents=1131123
+profileset."BC_ROP_FT_CS_TV"+=talents=1131131
+profileset."BC_ROP_FT_CS_RoF"+=talents=1131132
+profileset."BC_ROP_FT_CS_GS"+=talents=1131133
+profileset."BC_ROP_CR_FR_TV"+=talents=1132111
+profileset."BC_ROP_CR_FR_RoF"+=talents=1132112
+profileset."BC_ROP_CR_FR_GS"+=talents=1132113
+profileset."BC_ROP_CR_SI_TV"+=talents=1132121
+profileset."BC_ROP_CR_SI_RoF"+=talents=1132122
+profileset."BC_ROP_CR_SI_GS"+=talents=1132123
+profileset."BC_ROP_CR_CS_TV"+=talents=1132131
+profileset."BC_ROP_CR_CS_RoF"+=talents=1132132
+profileset."BC_ROP_CR_CS_GS"+=talents=1132133
+profileset."BC_ROP_EB_FR_TV"+=talents=1133111
+profileset."BC_ROP_EB_FR_RoF"+=talents=1133112
+profileset."BC_ROP_EB_FR_GS"+=talents=1133113
+profileset."BC_ROP_EB_SI_TV"+=talents=1133121
+profileset."BC_ROP_EB_SI_RoF"+=talents=1133122
+profileset."BC_ROP_EB_SI_GS"+=talents=1133123
+profileset."BC_ROP_EB_CS_TV"+=talents=1133131
+profileset."BC_ROP_EB_CS_RoF"+=talents=1133132
+profileset."BC_ROP_EB_CS_GS"+=talents=1133133
+profileset."LW_IF_FT_FR_TV"+=talents=2111111
+profileset."LW_IF_FT_FR_RoF"+=talents=2111112
+profileset."LW_IF_FT_FR_GS"+=talents=2111113
+profileset."LW_IF_FT_SI_TV"+=talents=2111121
+profileset."LW_IF_FT_SI_RoF"+=talents=2111122
+profileset."LW_IF_FT_SI_GS"+=talents=2111123
+profileset."LW_IF_FT_CS_TV"+=talents=2111131
+profileset."LW_IF_FT_CS_RoF"+=talents=2111132
+profileset."LW_IF_FT_CS_GS"+=talents=2111133
+profileset."LW_IF_CR_FR_TV"+=talents=2112111
+profileset."LW_IF_CR_FR_RoF"+=talents=2112112
+profileset."LW_IF_CR_FR_GS"+=talents=2112113
+profileset."LW_IF_CR_SI_TV"+=talents=2112121
+profileset."LW_IF_CR_SI_RoF"+=talents=2112122
+profileset."LW_IF_CR_SI_GS"+=talents=2112123
+profileset."LW_IF_CR_CS_TV"+=talents=2112131
+profileset."LW_IF_CR_CS_RoF"+=talents=2112132
+profileset."LW_IF_CR_CS_GS"+=talents=2112133
+profileset."LW_IF_EB_FR_TV"+=talents=2113111
+profileset."LW_IF_EB_FR_RoF"+=talents=2113112
+profileset."LW_IF_EB_FR_GS"+=talents=2113113
+profileset."LW_IF_EB_SI_TV"+=talents=2113121
+profileset."LW_IF_EB_SI_RoF"+=talents=2113122
+profileset."LW_IF_EB_SI_GS"+=talents=2113123
+profileset."LW_IF_EB_CS_TV"+=talents=2113131
+profileset."LW_IF_EB_CS_RoF"+=talents=2113132
+profileset."LW_IF_EB_CS_GS"+=talents=2113133
+profileset."LW_MI_FT_FR_TV"+=talents=2121111
+profileset."LW_MI_FT_FR_RoF"+=talents=2121112
+profileset."LW_MI_FT_FR_GS"+=talents=2121113
+profileset."LW_MI_FT_SI_TV"+=talents=2121121
+profileset."LW_MI_FT_SI_RoF"+=talents=2121122
+profileset."LW_MI_FT_SI_GS"+=talents=2121123
+profileset."LW_MI_FT_CS_TV"+=talents=2121131
+profileset."LW_MI_FT_CS_RoF"+=talents=2121132
+profileset."LW_MI_FT_CS_GS"+=talents=2121133
+profileset."LW_MI_CR_FR_TV"+=talents=2122111
+profileset."LW_MI_CR_FR_RoF"+=talents=2122112
+profileset."LW_MI_CR_FR_GS"+=talents=2122113
+profileset."LW_MI_CR_SI_TV"+=talents=2122121
+profileset."LW_MI_CR_SI_RoF"+=talents=2122122
+profileset."LW_MI_CR_SI_GS"+=talents=2122123
+profileset."LW_MI_CR_CS_TV"+=talents=2122131
+profileset."LW_MI_CR_CS_RoF"+=talents=2122132
+profileset."LW_MI_CR_CS_GS"+=talents=2122133
+profileset."LW_MI_EB_FR_TV"+=talents=2123111
+profileset."LW_MI_EB_FR_RoF"+=talents=2123112
+profileset."LW_MI_EB_FR_GS"+=talents=2123113
+profileset."LW_MI_EB_SI_TV"+=talents=2123121
+profileset."LW_MI_EB_SI_RoF"+=talents=2123122
+profileset."LW_MI_EB_SI_GS"+=talents=2123123
+profileset."LW_MI_EB_CS_TV"+=talents=2123131
+profileset."LW_MI_EB_CS_RoF"+=talents=2123132
+profileset."LW_MI_EB_CS_GS"+=talents=2123133
+profileset."LW_ROP_FT_FR_TV"+=talents=2131111
+profileset."LW_ROP_FT_FR_RoF"+=talents=2131112
+profileset."LW_ROP_FT_FR_GS"+=talents=2131113
+profileset."LW_ROP_FT_SI_TV"+=talents=2131121
+profileset."LW_ROP_FT_SI_RoF"+=talents=2131122
+profileset."LW_ROP_FT_SI_GS"+=talents=2131123
+profileset."LW_ROP_FT_CS_TV"+=talents=2131131
+profileset."LW_ROP_FT_CS_RoF"+=talents=2131132
+profileset."LW_ROP_FT_CS_GS"+=talents=2131133
+profileset."LW_ROP_CR_FR_TV"+=talents=2132111
+profileset."LW_ROP_CR_FR_RoF"+=talents=2132112
+profileset."LW_ROP_CR_FR_GS"+=talents=2132113
+profileset."LW_ROP_CR_SI_TV"+=talents=2132121
+profileset."LW_ROP_CR_SI_RoF"+=talents=2132122
+profileset."LW_ROP_CR_SI_GS"+=talents=2132123
+profileset."LW_ROP_CR_CS_TV"+=talents=2132131
+profileset."LW_ROP_CR_CS_RoF"+=talents=2132132
+profileset."LW_ROP_CR_CS_GS"+=talents=2132133
+profileset."LW_ROP_EB_FR_TV"+=talents=2133111
+profileset."LW_ROP_EB_FR_RoF"+=talents=2133112
+profileset."LW_ROP_EB_FR_GS"+=talents=2133113
+profileset."LW_ROP_EB_SI_TV"+=talents=2133121
+profileset."LW_ROP_EB_SI_RoF"+=talents=2133122
+profileset."LW_ROP_EB_SI_GS"+=talents=2133123
+profileset."LW_ROP_EB_CS_TV"+=talents=2133131
+profileset."LW_ROP_EB_CS_RoF"+=talents=2133132
+profileset."LW_ROP_EB_CS_GS"+=talents=2133133
+profileset."IN_IF_FT_FR_TV"+=talents=3111111
+profileset."IN_IF_FT_FR_RoF"+=talents=3111112
+profileset."IN_IF_FT_FR_GS"+=talents=3111113
+profileset."IN_IF_FT_SI_TV"+=talents=3111121
+profileset."IN_IF_FT_SI_RoF"+=talents=3111122
+profileset."IN_IF_FT_SI_GS"+=talents=3111123
+profileset."IN_IF_FT_CS_TV"+=talents=3111131
+profileset."IN_IF_FT_CS_RoF"+=talents=3111132
+profileset."IN_IF_FT_CS_GS"+=talents=3111133
+profileset."IN_IF_CR_FR_TV"+=talents=3112111
+profileset."IN_IF_CR_FR_RoF"+=talents=3112112
+profileset."IN_IF_CR_FR_GS"+=talents=3112113
+profileset."IN_IF_CR_SI_TV"+=talents=3112121
+profileset."IN_IF_CR_SI_RoF"+=talents=3112122
+profileset."IN_IF_CR_SI_GS"+=talents=3112123
+profileset."IN_IF_CR_CS_TV"+=talents=3112131
+profileset."IN_IF_CR_CS_RoF"+=talents=3112132
+profileset."IN_IF_CR_CS_GS"+=talents=3112133
+profileset."IN_IF_EB_FR_TV"+=talents=3113111
+profileset."IN_IF_EB_FR_RoF"+=talents=3113112
+profileset."IN_IF_EB_FR_GS"+=talents=3113113
+profileset."IN_IF_EB_SI_TV"+=talents=3113121
+profileset."IN_IF_EB_SI_RoF"+=talents=3113122
+profileset."IN_IF_EB_SI_GS"+=talents=3113123
+profileset."IN_IF_EB_CS_TV"+=talents=3113131
+profileset."IN_IF_EB_CS_RoF"+=talents=3113132
+profileset."IN_IF_EB_CS_GS"+=talents=3113133
+profileset."IN_MI_FT_FR_TV"+=talents=3121111
+profileset."IN_MI_FT_FR_RoF"+=talents=3121112
+profileset."IN_MI_FT_FR_GS"+=talents=3121113
+profileset."IN_MI_FT_SI_TV"+=talents=3121121
+profileset."IN_MI_FT_SI_RoF"+=talents=3121122
+profileset."IN_MI_FT_SI_GS"+=talents=3121123
+profileset."IN_MI_FT_CS_TV"+=talents=3121131
+profileset."IN_MI_FT_CS_RoF"+=talents=3121132
+profileset."IN_MI_FT_CS_GS"+=talents=3121133
+profileset."IN_MI_CR_FR_TV"+=talents=3122111
+profileset."IN_MI_CR_FR_RoF"+=talents=3122112
+profileset."IN_MI_CR_FR_GS"+=talents=3122113
+profileset."IN_MI_CR_SI_TV"+=talents=3122121
+profileset."IN_MI_CR_SI_RoF"+=talents=3122122
+profileset."IN_MI_CR_SI_GS"+=talents=3122123
+profileset."IN_MI_CR_CS_TV"+=talents=3122131
+profileset."IN_MI_CR_CS_RoF"+=talents=3122132
+profileset."IN_MI_CR_CS_GS"+=talents=3122133
+profileset."IN_MI_EB_FR_TV"+=talents=3123111
+profileset."IN_MI_EB_FR_RoF"+=talents=3123112
+profileset."IN_MI_EB_FR_GS"+=talents=3123113
+profileset."IN_MI_EB_SI_TV"+=talents=3123121
+profileset."IN_MI_EB_SI_RoF"+=talents=3123122
+profileset."IN_MI_EB_SI_GS"+=talents=3123123
+profileset."IN_MI_EB_CS_TV"+=talents=3123131
+profileset."IN_MI_EB_CS_RoF"+=talents=3123132
+profileset."IN_MI_EB_CS_GS"+=talents=3123133
+profileset."IN_ROP_FT_FR_TV"+=talents=3131111
+profileset."IN_ROP_FT_FR_RoF"+=talents=3131112
+profileset."IN_ROP_FT_FR_GS"+=talents=3131113
+profileset."IN_ROP_FT_SI_TV"+=talents=3131121
+profileset."IN_ROP_FT_SI_RoF"+=talents=3131122
+profileset."IN_ROP_FT_SI_GS"+=talents=3131123
+profileset."IN_ROP_FT_CS_TV"+=talents=3131131
+profileset."IN_ROP_FT_CS_RoF"+=talents=3131132
+profileset."IN_ROP_FT_CS_GS"+=talents=3131133
+profileset."IN_ROP_CR_FR_TV"+=talents=3132111
+profileset."IN_ROP_CR_FR_RoF"+=talents=3132112
+profileset."IN_ROP_CR_FR_GS"+=talents=3132113
+profileset."IN_ROP_CR_SI_TV"+=talents=3132121
+profileset."IN_ROP_CR_SI_RoF"+=talents=3132122
+profileset."IN_ROP_CR_SI_GS"+=talents=3132123
+profileset."IN_ROP_CR_CS_TV"+=talents=3132131
+profileset."IN_ROP_CR_CS_RoF"+=talents=3132132
+profileset."IN_ROP_CR_CS_GS"+=talents=3132133
+profileset."IN_ROP_EB_FR_TV"+=talents=3133111
+profileset."IN_ROP_EB_FR_RoF"+=talents=3133112
+profileset."IN_ROP_EB_FR_GS"+=talents=3133113
+profileset."IN_ROP_EB_SI_TV"+=talents=3133121
+profileset."IN_ROP_EB_SI_RoF"+=talents=3133122
+profileset."IN_ROP_EB_SI_GS"+=talents=3133123
+profileset."IN_ROP_EB_CS_TV"+=talents=3133131
+profileset."IN_ROP_EB_CS_RoF"+=talents=3133132
+profileset."IN_ROP_EB_CS_GS"+=talents=3133133
