@@ -5,7 +5,7 @@ threads=4
 process_priority=low
 report_details=0
 chart_show_relative_difference=1
-html="C:\Users\glynnm\Desktop\git\Simc-Files\02. Battle For Azeroth\Tier 22\Mage\01_Frost_Files\00_Talents\01_HTML_Files\00_Frost_Single_Talents.html"
+html="C:\Users\Glynny-PC\Desktop\Github\Simc-Files\02. Battle For Azeroth\Tier 22\Mage\01_Frost_Files\00_Talents\01_HTML_Files\00_Frost_Single_Talents.html"
 #desired_targets=4
 
 mage="T22_Mage_Frost"
